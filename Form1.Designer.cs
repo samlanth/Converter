@@ -68,8 +68,8 @@
             this.quitterToolStripMenuItem2});
             this.quitterToolStripMenuItem.Name = "quitterToolStripMenuItem";
             this.quitterToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.G)));
-            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
-            this.quitterToolStripMenuItem.Text = "Menu";
+            this.quitterToolStripMenuItem.Size = new System.Drawing.Size(163, 20);
+            this.quitterToolStripMenuItem.Text = "Formulaire de l’application ";
             // 
             // gérerLesUnitésToolStripMenuItem
             // 
@@ -189,7 +189,7 @@
             this.Controls.Add(this.BTN_CONVERSION);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Accueil ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
