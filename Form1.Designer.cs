@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.quitterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -126,7 +125,7 @@
             // 
             // flashButton3
             // 
-            this.flashButton3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("flashButton3.BackgroundImage")));
+            this.flashButton3.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.ICON_Editer_Neutre;
             this.flashButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton3.ClickedImage = null;
             this.flashButton3.DisabledImage = null;
@@ -143,7 +142,7 @@
             // 
             // BTN_QUITTER
             // 
-            this.BTN_QUITTER.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN_QUITTER.BackgroundImage")));
+            this.BTN_QUITTER.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.ICON_Annuler_Neutral;
             this.BTN_QUITTER.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BTN_QUITTER.ClickedImage = null;
             this.BTN_QUITTER.DisabledImage = null;
@@ -161,7 +160,7 @@
             // 
             // BTN_CONVERSION
             // 
-            this.BTN_CONVERSION.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BTN_CONVERSION.BackgroundImage")));
+            this.BTN_CONVERSION.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.Icon_Neutral;
             this.BTN_CONVERSION.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BTN_CONVERSION.ClickedImage = null;
             this.BTN_CONVERSION.DisabledImage = null;
