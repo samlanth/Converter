@@ -119,17 +119,18 @@ namespace TP_DE_CONVERSION
 
         }
 
-        private void InitializeComponent()
-        {
-            this.SuspendLayout();
-            // 
-            // Form1
-            // 
-            this.ClientSize = new System.Drawing.Size(507, 261);
-            this.Name = "Form1";
-            this.ResumeLayout(false);
+        //private void InitializeComponent()
+        //{
+        //    this.SuspendLayout();
 
-        }
+        //    Form1
+
+
+        //    this.ClientSize = new System.Drawing.Size(507, 261);
+        //    this.Name = "Form1";
+        //    this.ResumeLayout(false);
+
+        //}
         /* ---------------------------BTN_GERER---------------------------- */
 
     }
