@@ -22,7 +22,7 @@ namespace TP_DE_CONVERSION
 
         private void btn_conversion_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btn_quitter_Click(object sender, EventArgs e)
@@ -58,17 +58,17 @@ namespace TP_DE_CONVERSION
         /* ---------------------------BTN_QUITTER---------------------------- */
         private void btn_quitter_MouseHover(object sender, EventArgs e)
         {
-            this.btn_quitter.BackgroundImage = Properties.Resources.ICON_Annuler_Over;
+          //  this.btn_quitter.BackgroundImage = Properties.Resources.ICON_Annuler_Over;
         }
 
         private void btn_quitter_MouseLeave(object sender, EventArgs e)
         {
-            this.btn_quitter.BackgroundImage = Properties.Resources.ICON_Annuler_Neutral;
+          //  this.btn_quitter.BackgroundImage = Properties.Resources.ICON_Annuler_Neutral;
         }
 
         private void btn_quitter_MouseDown(object sender, MouseEventArgs e)
         {
-            this.btn_quitter.BackgroundImage = Properties.Resources.ICON_Annuler_Click;
+           // this.btn_quitter.BackgroundImage = Properties.Resources.ICON_Annuler_Click;
         }
         /* ---------------------------BTN_QUITTER---------------------------- */
         /* --------------------------- BTN_EFFACER---------------------------- */
@@ -87,5 +87,26 @@ namespace TP_DE_CONVERSION
             this.btn_effacer_val.BackgroundImage = Properties.Resources.ICON_Effacer_Click;
         }
         /* --------------------------- BTN_EFFACER---------------------------- */
+
+        private void TB_Values_KeyPress(object sender, KeyPressEventArgs e)
+        {
+          
+        }
+
+        private void flashButton1_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Click;
+            this.Close();
+        }
+
+        private void flashButton1_MouseHover(object sender, EventArgs e)
+        {
+            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Hover;
+        }
+
+        private void flashButton1_MouseLeave(object sender, EventArgs e)
+        {
+            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Neutral;
+        }
     }
 }

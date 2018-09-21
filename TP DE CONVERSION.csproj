@@ -138,5 +138,20 @@
   <ItemGroup>
     <None Include="Resources\ICON_Effacer_Over.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="button quit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="button quit hover.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="button quit click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="button quit_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="button quit_click2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

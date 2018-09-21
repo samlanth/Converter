@@ -63,6 +63,46 @@ namespace TP_DE_CONVERSION.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Button_Exit_Click {
+            get {
+                object obj = ResourceManager.GetObject("Button_Exit_Click", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Button_Exit_Hover {
+            get {
+                object obj = ResourceManager.GetObject("Button_Exit_Hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Button_Exit_Neutral {
+            get {
+                object obj = ResourceManager.GetObject("Button_Exit_Neutral", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap button_quit_hover {
+            get {
+                object obj = ResourceManager.GetObject("button_quit_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ICON_Annuler_Click {
             get {
                 object obj = ResourceManager.GetObject("ICON_Annuler_Click", resourceCulture);

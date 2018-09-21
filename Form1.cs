@@ -46,7 +46,7 @@ namespace TP_DE_CONVERSION
 
         private void flashButton2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
         }
 
         private void BTN_CONVERSION_Click(object sender, EventArgs e)
@@ -84,17 +84,17 @@ namespace TP_DE_CONVERSION
         /* ---------------------------BTN_QUITTER---------------------------- */
         private void BTN_QUITTER_MouseHover(object sender, EventArgs e)
         {
-            this.BTN_QUITTER.BackgroundImage = Properties.Resources.ICON_Annuler_Over;
+           // this.BTN_QUITTER.BackgroundImage = Properties.Resources.ICON_Annuler_Over;
         }
 
         private void BTN_QUITTER_MouseLeave(object sender, EventArgs e)
         {
-            this.BTN_QUITTER.BackgroundImage = Properties.Resources.ICON_Annuler_Neutral;
+            //this.BTN_QUITTER.BackgroundImage = Properties.Resources.ICON_Annuler_Neutral;
         }
 
         private void BTN_QUITTER_MouseDown(object sender, MouseEventArgs e)
         {
-            this.BTN_QUITTER.BackgroundImage = Properties.Resources.ICON_Annuler_Click;
+           // this.BTN_QUITTER.BackgroundImage = Properties.Resources.ICON_Annuler_Click;
         }
         /* ---------------------------BTN_QUITTER---------------------------- */
 
@@ -117,6 +117,26 @@ namespace TP_DE_CONVERSION
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void flashButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void flashButton1_MouseHover(object sender, EventArgs e)
+        {
+            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Hover;
+        }
+
+        private void flashButton1_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Click;
+        }
+
+        private void flashButton1_MouseLeave(object sender, EventArgs e)
+        {
+            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Neutral;
         }
 
         //private void InitializeComponent()
