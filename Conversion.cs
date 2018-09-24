@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using UnitConverter;
 
 namespace TP_DE_CONVERSION
 {
@@ -22,7 +23,10 @@ namespace TP_DE_CONVERSION
 
         private void btn_conversion_Click(object sender, EventArgs e)
         {
-
+            if (string.IsNullOrEmpty(Resultat_Conversion.Text))
+            {
+                Resultat_Conversion.Text = CONVERTER.Convert(Int32.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+            }
         }
 
         private void btn_quitter_Click(object sender, EventArgs e)
@@ -32,11 +36,8 @@ namespace TP_DE_CONVERSION
 
         private void btn_effacer_val_Click(object sender, EventArgs e)
         {
-            RB_Distance.Checked = false;
-            RB_POIDS.Checked = false;
-            RB_Volume.Checked = false;
-            comboBox1.Items.Clear();
-            comboBox2.Items.Clear();
+
+
             TB_Values.Text = "1";
             Resultat_Conversion.Text = "";
 
@@ -45,42 +46,17 @@ namespace TP_DE_CONVERSION
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             if (RB_Volume.Checked)
-            {        
-            // Volume impérial UK/US
+            {
+                // Volume impérial UK/US
                 comboBox1.Items.Clear();
-                comboBox1.Items.Add("litres");
-                comboBox1.Text = "litres";
-                comboBox1.Items.Add("millilitres");
-                comboBox1.Items.Add(" mètres cube");
-                comboBox1.Items.Add("centimètres cube");
-                comboBox1.Items.Add("onces UK");
-                comboBox1.Items.Add("onces US");
-                comboBox1.Items.Add("pintes US");
-                comboBox1.Items.Add("pintes UK");
-                comboBox1.Items.Add("pouces cube");
-                comboBox1.Items.Add("pieds cube");
-                comboBox1.Items.Add("gallons US");
-                comboBox1.Items.Add("gallons UK");
-                comboBox1.Items.Add("barils de pétrole");
-
                 comboBox2.Items.Clear();
-                comboBox2.Items.Add("litres");
-                comboBox2.Text = "millilitres";
-                comboBox2.Items.Add("millilitres");
-                comboBox2.Items.Add(" mètres cube");
-                comboBox2.Items.Add("centimètres cube");
-                comboBox2.Items.Add("onces UK");
-                comboBox2.Items.Add("onces US");
-                comboBox2.Items.Add("pintes US");
-                comboBox2.Items.Add("pintes UK");
-                comboBox2.Items.Add("pouces cube");
-                comboBox2.Items.Add("pieds cube");
-                comboBox2.Items.Add("gallons US");
-                comboBox2.Items.Add("gallons UK");
-                comboBox2.Items.Add("barils de pétrole");
-
+                foreach (Unit unit in CONVERTER.GetUnitsByType(UnitType.Volume))
+                {
+                    comboBox1.Items.Add(unit);
+                    comboBox2.Items.Add(unit);
+                }
                 comboBox1.SelectedIndex = 0;
-                comboBox2.SelectedIndex = 1;
+                comboBox2.SelectedIndex = 4;
             }
         }
         /* ---------------------------BTN_CONVERSION---------------------------- */
@@ -164,28 +140,12 @@ namespace TP_DE_CONVERSION
             {
 
                 comboBox1.Items.Clear();
-         
-                comboBox1.Items.Add("kilogrammes");
-                comboBox1.Text = "kilogrammes";
-                comboBox1.Items.Add("grammes");
-                comboBox1.Items.Add("milligrammes");
-                comboBox1.Items.Add("tonnes");
-                comboBox1.Items.Add("Livre");
-                comboBox1.Items.Add("onces");
-                comboBox1.Items.Add("tonnes UK");
-                comboBox1.Items.Add("tonnes US");
-
                 comboBox2.Items.Clear();
-                comboBox2.Items.Add("kilogrammes");
-                comboBox2.Text = "grammes";
-                comboBox2.Items.Add("grammes");
-                comboBox2.Items.Add("milligrammes");
-                comboBox2.Items.Add("tonnes");
-                comboBox2.Items.Add("Livre");
-                comboBox2.Items.Add("onces");
-                comboBox2.Items.Add("tonnes UK");
-                comboBox2.Items.Add("tonnes US");
-
+                foreach (Unit unit in CONVERTER.GetUnitsByType(UnitType.Poids))
+                {
+                    comboBox1.Items.Add(unit);
+                    comboBox2.Items.Add(unit);
+                }
                 comboBox1.SelectedIndex = 1;
                 comboBox2.SelectedIndex = 2;
             }
@@ -196,35 +156,12 @@ namespace TP_DE_CONVERSION
             if (RB_Distance.Checked)
             {
                 comboBox1.Items.Clear();
-                comboBox1.Items.Add("kilomètres");
-                comboBox1.Text = "kilomètres";
-                comboBox1.Items.Add("mètres");
-                comboBox1.Items.Add("centimètres");
-                comboBox1.Items.Add("millimètres");
-                comboBox1.Items.Add("Pied");
-
-                // Distance impériale UK/US
-                comboBox1.Items.Add("pieds");
-                comboBox1.Items.Add("pouces");
-                comboBox1.Items.Add("verges");
-                comboBox1.Items.Add("milles");
-                comboBox1.Items.Add("milles marin");
-
                 comboBox2.Items.Clear();
-                comboBox2.Items.Add("kilomètres");
-                comboBox2.Text = "kilomètres";
-                comboBox2.Items.Add("mètres");
-                comboBox2.Items.Add("centimètres");
-                comboBox2.Items.Add("millimètres");
-                comboBox2.Items.Add("Pied");
-
-                // Distance impériale UK/US
-                comboBox2.Items.Add("pieds");
-                comboBox2.Items.Add("pouces");
-                comboBox2.Items.Add("verges");
-                comboBox2.Items.Add("milles");
-                comboBox2.Items.Add("milles marin");
-
+                foreach (Unit unit in CONVERTER.GetUnitsByType(UnitType.Distance))
+                {
+                    comboBox1.Items.Add(unit);
+                    comboBox2.Items.Add(unit);
+                }
                 comboBox1.SelectedIndex = 1;
                 comboBox2.SelectedIndex = 2;
             }
@@ -238,6 +175,78 @@ namespace TP_DE_CONVERSION
         private void Resultat_Conversion_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void TB_Values_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(TB_Values.Text))
+            {
+                
+            }
+            else
+            {
+                Resultat_Conversion.Text = CONVERTER.Convert(Int32.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+            }
+        }
+
+        private void RB_Volume_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (string.IsNullOrEmpty(TB_Values.Text))
+            {
+
+            }
+            else
+            {
+                Resultat_Conversion.Text = CONVERTER.Convert(Int32.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+            }
+        }
+
+        private void RB_POIDS_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (string.IsNullOrEmpty(TB_Values.Text))
+            {
+
+            }
+            else
+            {
+                Resultat_Conversion.Text = CONVERTER.Convert(Int32.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+            }
+        }
+
+        private void RB_Distance_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (string.IsNullOrEmpty(TB_Values.Text))
+            {
+
+            }
+            else
+            {
+                Resultat_Conversion.Text = CONVERTER.Convert(Int32.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+            }
+        }
+
+        private void comboBox2_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(TB_Values.Text))
+            {
+
+            }
+            else
+            {
+                Resultat_Conversion.Text = CONVERTER.Convert(Int32.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+            }
+        }
+
+        private void comboBox1_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(TB_Values.Text))
+            {
+
+            }
+            else
+            {
+                Resultat_Conversion.Text = CONVERTER.Convert(Int32.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+            }
         }
     }
 }

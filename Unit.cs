@@ -53,6 +53,23 @@ namespace UnitConverter
             Name = "sans nom";
             MetricValue = 0.0M;
         }
+        /// <summary>
+        /// Création d'un clone
+        /// </summary>
+        /// <returns>copie de l'instance</returns>
+        public Unit Clone()
+        {
+            return new Unit { Type = Type, Name = Name, MetricValue = MetricValue };
+        }
+        /// <summary>
+        /// Vérification d'égalité
+        /// </summary>
+        /// <param name="unit"></param>
+        /// <returns>vrai si les membres du paramètre sont égaux avex ceux de l'instance</returns>
+        public bool Equal(Unit unit)
+        {
+            return (Type == unit.Type) && (string.Compare(Name, unit.Name) == 0) && (MetricValue == unit.MetricValue);
+        }
 
         /// <summary>
         /// Converti une chaine de caractère provenant d'un fichier texte en un objet Unit
@@ -162,48 +179,48 @@ namespace UnitConverter
             Units = new List<Unit>();
             /////////////////////////////////////////////////////////////////////////////////////////////
             // Distance métrique
-            Add(new Unit { Type = UnitType.Distance, Name = "millimètres", MetricValue = 0.001M });
-            Add(new Unit { Type = UnitType.Distance, Name = "centimètres", MetricValue = 0.01M });
-            Add(new Unit { Type = UnitType.Distance, Name = "mètres", MetricValue = 1M });
-            Add(new Unit { Type = UnitType.Distance, Name = "kilomètres", MetricValue = 1000M });
+            Add(new Unit { Type = UnitType.Distance, Name = "millimètre", MetricValue = 0.001M });
+            Add(new Unit { Type = UnitType.Distance, Name = "centimètre", MetricValue = 0.01M });
+            Add(new Unit { Type = UnitType.Distance, Name = "mètre", MetricValue = 1M });
+            Add(new Unit { Type = UnitType.Distance, Name = "kilomètre", MetricValue = 1000M });
 
             // Distance impériale UK/US
-            Add(new Unit { Type = UnitType.Distance, Name = "pieds", MetricValue = 0.3048M });
-            Add(new Unit { Type = UnitType.Distance, Name = "pouces", MetricValue = 0.0254M });
-            Add(new Unit { Type = UnitType.Distance, Name = "verges", MetricValue = 0.9144M });
-            Add(new Unit { Type = UnitType.Distance, Name = "milles", MetricValue = 1609.344M });
-            Add(new Unit { Type = UnitType.Distance, Name = "milles marin", MetricValue = 1852.0M });
+            Add(new Unit { Type = UnitType.Distance, Name = "pied", MetricValue = 0.3048M });
+            Add(new Unit { Type = UnitType.Distance, Name = "pouce", MetricValue = 0.0254M });
+            Add(new Unit { Type = UnitType.Distance, Name = "verge", MetricValue = 0.9144M });
+            Add(new Unit { Type = UnitType.Distance, Name = "mille", MetricValue = 1609.344M });
+            Add(new Unit { Type = UnitType.Distance, Name = "mille marin", MetricValue = 1852.0M });
 
             /////////////////////////////////////////////////////////////////////////////////////////////
             // Volume métrique
-            Add(new Unit { Type = UnitType.Volume, Name = "millilitres", MetricValue = 0.001M });
-            Add(new Unit { Type = UnitType.Volume, Name = "centimètres cube", MetricValue = 0.001M });
-            Add(new Unit { Type = UnitType.Volume, Name = "litres", MetricValue = 1M });
-            Add(new Unit { Type = UnitType.Volume, Name = "mètres cube", MetricValue = 1000M });
+            Add(new Unit { Type = UnitType.Volume, Name = "millilitre", MetricValue = 0.001M });
+            Add(new Unit { Type = UnitType.Volume, Name = "centimètre cube", MetricValue = 0.001M });
+            Add(new Unit { Type = UnitType.Volume, Name = "litre", MetricValue = 1M });
+            Add(new Unit { Type = UnitType.Volume, Name = "mètre cube", MetricValue = 1000M });
 
             // Volume impérial UK/US
-            Add(new Unit { Type = UnitType.Volume, Name = "onces UK", MetricValue = 0.0284130625M });
-            Add(new Unit { Type = UnitType.Volume, Name = "onces US", MetricValue = 0.0295735295625M });
-            Add(new Unit { Type = UnitType.Volume, Name = "pouces cube", MetricValue = 0.016387063999928M });
-            Add(new Unit { Type = UnitType.Volume, Name = "pieds cube", MetricValue = 28.316846592392M });
-            Add(new Unit { Type = UnitType.Volume, Name = "pintes UK", MetricValue = 0.56826125M });
-            Add(new Unit { Type = UnitType.Volume, Name = "pintes US", MetricValue = 0.473176473M });
-            Add(new Unit { Type = UnitType.Volume, Name = "gallons UK", MetricValue = 4.54609M });
-            Add(new Unit { Type = UnitType.Volume, Name = "gallons US", MetricValue = 3.785411784M });
-            Add(new Unit { Type = UnitType.Volume, Name = "barils de pétrole", MetricValue = 158.98729492881M });
+            Add(new Unit { Type = UnitType.Volume, Name = "once UK", MetricValue = 0.0284130625M });
+            Add(new Unit { Type = UnitType.Volume, Name = "once US", MetricValue = 0.0295735295625M });
+            Add(new Unit { Type = UnitType.Volume, Name = "pouce cube", MetricValue = 0.016387063999928M });
+            Add(new Unit { Type = UnitType.Volume, Name = "pied cube", MetricValue = 28.316846592392M });
+            Add(new Unit { Type = UnitType.Volume, Name = "pinte UK", MetricValue = 0.56826125M });
+            Add(new Unit { Type = UnitType.Volume, Name = "pinte US", MetricValue = 0.473176473M });
+            Add(new Unit { Type = UnitType.Volume, Name = "gallon UK", MetricValue = 4.54609M });
+            Add(new Unit { Type = UnitType.Volume, Name = "gallon US", MetricValue = 3.785411784M });
+            Add(new Unit { Type = UnitType.Volume, Name = "baril de pétrole", MetricValue = 158.98729492881M });
 
             /////////////////////////////////////////////////////////////////////////////////////////////
             // Poids métrique
-            Add(new Unit { Type = UnitType.Poids, Name = "milligrammes", MetricValue = 0.000001M });
-            Add(new Unit { Type = UnitType.Poids, Name = "grammes", MetricValue = 0.001M });
-            Add(new Unit { Type = UnitType.Poids, Name = "kilogrammes", MetricValue = 1M });
-            Add(new Unit { Type = UnitType.Poids, Name = "tonnes", MetricValue = 1000M });
+            Add(new Unit { Type = UnitType.Poids, Name = "milligramme", MetricValue = 0.000001M });
+            Add(new Unit { Type = UnitType.Poids, Name = "gramme", MetricValue = 0.001M });
+            Add(new Unit { Type = UnitType.Poids, Name = "kilogramme", MetricValue = 1M });
+            Add(new Unit { Type = UnitType.Poids, Name = "tonne", MetricValue = 1000M });
 
             // Poids impérial UK/US
-            Add(new Unit { Type = UnitType.Poids, Name = "onces", MetricValue = 0.028349523125M });
-            Add(new Unit { Type = UnitType.Poids, Name = "livres", MetricValue = 0.45359237000021M });
-            Add(new Unit { Type = UnitType.Poids, Name = "tonnes UK", MetricValue = 1016.0536476326M });
-            Add(new Unit { Type = UnitType.Poids, Name = "tonnes US", MetricValue = 907.19404880704M });
+            Add(new Unit { Type = UnitType.Poids, Name = "once", MetricValue = 0.028349523125M });
+            Add(new Unit { Type = UnitType.Poids, Name = "livre", MetricValue = 0.45359237000021M });
+            Add(new Unit { Type = UnitType.Poids, Name = "tonne UK", MetricValue = 1016.0536476326M });
+            Add(new Unit { Type = UnitType.Poids, Name = "tonne US", MetricValue = 907.19404880704M });
         }
 
         /// <summary>
@@ -270,7 +287,7 @@ namespace UnitConverter
         /// </summary>
         /// <param name="name"></param>
         /// <returns>Nom de l'unité de mesure</returns>
-        private static Unit GetUnitByName(string name)
+        public static Unit GetUnitByName(string name)
         {
             foreach (Unit unit in Units)
             {

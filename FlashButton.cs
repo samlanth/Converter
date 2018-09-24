@@ -34,10 +34,8 @@ namespace Calculator
     /// Notez que cette classe doit être compilée avant d'utiliser de ses instances dans le concepteur de MainForm
     /// 
     /// </summary>
-    class FlashButton : Control
+    class FlashButton : Button
     {
-        private System.IO.FileSystemWatcher fileSystemWatcher1;
-
         public Image NeutralImage { get; set; }
         public Image OverImage { get; set; }
         public Image ClickedImage { get; set; }
@@ -47,8 +45,15 @@ namespace Calculator
         {
             Size = new Size(36, 36);
             BackgroundImageLayout = ImageLayout.Zoom;
+            Image = new Bitmap(ClientSize.Width, ClientSize.Height);
         }
-
+        protected override void OnPaint(PaintEventArgs pevent)
+        {
+            base.OnPaint(pevent);
+            pevent.Graphics.FillRectangle(new SolidBrush(Parent.BackColor), ClientRectangle);
+            if (BackgroundImage != null)
+                pevent.Graphics.DrawImage(BackgroundImage, ClientRectangle);
+        }
         /// <summary>
         /// Gestion de l'événement [MouseDown]
         /// Il survient lorsqu'un des boutons de la souris est enfoncé
@@ -69,10 +74,10 @@ namespace Calculator
         /// <param name="e">Paramètres de l'événement</param>
         protected override void OnMouseUp(MouseEventArgs e)
         {
-            base.OnMouseDown(e);
-            if ((ClickedImage != null) && Enabled)
+            base.OnMouseUp(e);
+            if ((NeutralImage != null) && Enabled)
             {
-                BackgroundImage = OverImage;
+                BackgroundImage = NeutralImage;
             }
         }
 
@@ -84,7 +89,7 @@ namespace Calculator
         protected override void OnMouseEnter(EventArgs e)
         {
             base.OnMouseEnter(e);
-            if ((ClickedImage != null) && Enabled)
+            if ((OverImage != null) && Enabled)
             {
                 BackgroundImage = OverImage;
             }
@@ -98,7 +103,16 @@ namespace Calculator
         protected override void OnMouseLeave(EventArgs e)
         {
             base.OnMouseLeave(e);
-            if ((ClickedImage != null) && Enabled)
+            if ((NeutralImage != null) && Enabled)
+            {
+                BackgroundImage = NeutralImage;
+            }
+        }
+
+        protected override void OnLeave(EventArgs e)
+        {
+            base.OnLeave(e);
+            if ((NeutralImage != null) && Enabled)
             {
                 BackgroundImage = NeutralImage;
             }
@@ -121,19 +135,13 @@ namespace Calculator
             }
         }
 
-        private void InitializeComponent()
+        protected override void OnClick(EventArgs e)
         {
-            this.fileSystemWatcher1 = new System.IO.FileSystemWatcher();
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
-            this.SuspendLayout();
-            // 
-            // fileSystemWatcher1
-            // 
-            this.fileSystemWatcher1.EnableRaisingEvents = true;
-            this.fileSystemWatcher1.SynchronizingObject = this;
-            ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
-            this.ResumeLayout(false);
-
+            base.OnClick(e);
+            if ((NeutralImage != null) && Enabled)
+            {
+                BackgroundImage = NeutralImage;
+            }
         }
     }
 }

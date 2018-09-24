@@ -54,11 +54,12 @@
             this.RB_Volume.Text = "Volume";
             this.RB_Volume.UseVisualStyleBackColor = true;
             this.RB_Volume.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.RB_Volume.MouseClick += new System.Windows.Forms.MouseEventHandler(this.RB_Volume_MouseClick);
             // 
             // RB_POIDS
             // 
             this.RB_POIDS.AutoSize = true;
-            this.RB_POIDS.Location = new System.Drawing.Point(177, 42);
+            this.RB_POIDS.Location = new System.Drawing.Point(138, 42);
             this.RB_POIDS.Name = "RB_POIDS";
             this.RB_POIDS.Size = new System.Drawing.Size(51, 17);
             this.RB_POIDS.TabIndex = 1;
@@ -66,11 +67,12 @@
             this.RB_POIDS.Text = "Poids";
             this.RB_POIDS.UseVisualStyleBackColor = true;
             this.RB_POIDS.CheckedChanged += new System.EventHandler(this.RB_POIDS_CheckedChanged);
+            this.RB_POIDS.MouseClick += new System.Windows.Forms.MouseEventHandler(this.RB_POIDS_MouseClick);
             // 
             // RB_Distance
             // 
             this.RB_Distance.AutoSize = true;
-            this.RB_Distance.Location = new System.Drawing.Point(287, 42);
+            this.RB_Distance.Location = new System.Drawing.Point(249, 42);
             this.RB_Distance.Name = "RB_Distance";
             this.RB_Distance.Size = new System.Drawing.Size(67, 17);
             this.RB_Distance.TabIndex = 2;
@@ -78,22 +80,24 @@
             this.RB_Distance.Text = "Distance";
             this.RB_Distance.UseVisualStyleBackColor = true;
             this.RB_Distance.CheckedChanged += new System.EventHandler(this.RB_Distance_CheckedChanged);
+            this.RB_Distance.MouseClick += new System.Windows.Forms.MouseEventHandler(this.RB_Distance_MouseClick);
             // 
             // TB_Values
             // 
-            this.TB_Values.Location = new System.Drawing.Point(22, 216);
+            this.TB_Values.Location = new System.Drawing.Point(22, 91);
             this.TB_Values.Name = "TB_Values";
-            this.TB_Values.Size = new System.Drawing.Size(100, 20);
+            this.TB_Values.Size = new System.Drawing.Size(121, 20);
             this.TB_Values.TabIndex = 5;
             this.TB_Values.Text = "1";
+            this.TB_Values.TextChanged += new System.EventHandler(this.TB_Values_TextChanged);
             this.TB_Values.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB_Values_KeyPress);
             // 
             // Resultat_Conversion
             // 
-            this.Resultat_Conversion.Location = new System.Drawing.Point(233, 216);
+            this.Resultat_Conversion.Location = new System.Drawing.Point(195, 91);
             this.Resultat_Conversion.Name = "Resultat_Conversion";
             this.Resultat_Conversion.ReadOnly = true;
-            this.Resultat_Conversion.Size = new System.Drawing.Size(100, 20);
+            this.Resultat_Conversion.Size = new System.Drawing.Size(121, 20);
             this.Resultat_Conversion.TabIndex = 6;
             this.Resultat_Conversion.TextChanged += new System.EventHandler(this.Resultat_Conversion_TextChanged);
             // 
@@ -101,11 +105,12 @@
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(22, 106);
+            this.comboBox1.Location = new System.Drawing.Point(22, 124);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 10;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
             // 
             // comboBox2
             // 
@@ -120,15 +125,16 @@
             "f",
             "g",
             "h"});
-            this.comboBox2.Location = new System.Drawing.Point(233, 106);
+            this.comboBox2.Location = new System.Drawing.Point(195, 124);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 11;
+            this.comboBox2.SelectedValueChanged += new System.EventHandler(this.comboBox2_SelectedValueChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(132, 9);
+            this.label1.Location = new System.Drawing.Point(112, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 13);
             this.label1.TabIndex = 12;
@@ -140,11 +146,11 @@
             this.flashButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton1.ClickedImage = null;
             this.flashButton1.DisabledImage = null;
-            this.flashButton1.Location = new System.Drawing.Point(330, 216);
+            this.flashButton1.Location = new System.Drawing.Point(276, 151);
             this.flashButton1.Name = "flashButton1";
             this.flashButton1.NeutralImage = null;
             this.flashButton1.OverImage = null;
-            this.flashButton1.Size = new System.Drawing.Size(82, 52);
+            this.flashButton1.Size = new System.Drawing.Size(82, 31);
             this.flashButton1.TabIndex = 13;
             this.flashButton1.Text = "flashButton1";
             this.flashButton1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.flashButton1_MouseDown);
@@ -157,7 +163,7 @@
             this.btn_effacer_val.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_effacer_val.ClickedImage = null;
             this.btn_effacer_val.DisabledImage = null;
-            this.btn_effacer_val.Location = new System.Drawing.Point(364, 142);
+            this.btn_effacer_val.Location = new System.Drawing.Point(322, 100);
             this.btn_effacer_val.Name = "btn_effacer_val";
             this.btn_effacer_val.NeutralImage = null;
             this.btn_effacer_val.OverImage = null;
@@ -175,7 +181,7 @@
             this.btn_conversion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_conversion.ClickedImage = null;
             this.btn_conversion.DisabledImage = null;
-            this.btn_conversion.Location = new System.Drawing.Point(163, 200);
+            this.btn_conversion.Location = new System.Drawing.Point(153, 100);
             this.btn_conversion.Name = "btn_conversion";
             this.btn_conversion.NeutralImage = null;
             this.btn_conversion.OverImage = null;
@@ -190,18 +196,18 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(141, 78);
+            this.label2.Location = new System.Drawing.Point(36, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 13);
+            this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 14;
-            this.label2.Text = "Selection de l\'unité";
+            this.label2.Text = "Conversion";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Conversion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(412, 261);
+            this.ClientSize = new System.Drawing.Size(358, 188);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.flashButton1);
             this.Controls.Add(this.label1);
