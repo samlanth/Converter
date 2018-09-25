@@ -116,7 +116,9 @@ namespace TP_DE_CONVERSION
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            ToolTip toolTip1 = new ToolTip();
+            toolTip1.SetToolTip(this.BTN_CONVERSION, "Conversion d'Unité");
+            toolTip1.SetToolTip(this.flashButton3, "Ajouter une Unité");
         }
 
         private void flashButton1_Click(object sender, EventArgs e)
@@ -148,6 +150,16 @@ namespace TP_DE_CONVERSION
             {
                 DisplayName = dlg.DisplayName;
             }
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
 
         //private void InitializeComponent()

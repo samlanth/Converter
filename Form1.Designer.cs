@@ -37,8 +37,6 @@
             this.effectuerUneConversionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.quitterToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.LB_EFFECTUER_CONVERSION = new System.Windows.Forms.Label();
-            this.LB_GÉRER = new System.Windows.Forms.Label();
             this.flashButton1 = new Calculator.FlashButton();
             this.flashButton3 = new Calculator.FlashButton();
             this.BTN_CONVERSION = new Calculator.FlashButton();
@@ -56,9 +54,10 @@
             this.quitterToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(508, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(257, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // quitterToolStripMenuItem
             // 
@@ -70,6 +69,7 @@
             this.quitterToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.G)));
             this.quitterToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.quitterToolStripMenuItem.Text = "Action";
+            this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
             // gérerLesUnitésToolStripMenuItem
             // 
@@ -99,24 +99,6 @@
             this.contextMenuStrip2.Name = "contextMenuStrip2";
             this.contextMenuStrip2.Size = new System.Drawing.Size(61, 4);
             // 
-            // LB_EFFECTUER_CONVERSION
-            // 
-            this.LB_EFFECTUER_CONVERSION.AutoSize = true;
-            this.LB_EFFECTUER_CONVERSION.Location = new System.Drawing.Point(12, 105);
-            this.LB_EFFECTUER_CONVERSION.Name = "LB_EFFECTUER_CONVERSION";
-            this.LB_EFFECTUER_CONVERSION.Size = new System.Drawing.Size(126, 13);
-            this.LB_EFFECTUER_CONVERSION.TabIndex = 6;
-            this.LB_EFFECTUER_CONVERSION.Text = "Effectuer une conversion";
-            // 
-            // LB_GÉRER
-            // 
-            this.LB_GÉRER.AutoSize = true;
-            this.LB_GÉRER.Location = new System.Drawing.Point(212, 105);
-            this.LB_GÉRER.Name = "LB_GÉRER";
-            this.LB_GÉRER.Size = new System.Drawing.Size(82, 13);
-            this.LB_GÉRER.TabIndex = 8;
-            this.LB_GÉRER.Text = "Gérer les Unités";
-            // 
             // flashButton1
             // 
             this.flashButton1.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.Button_Exit_Neutral;
@@ -124,11 +106,11 @@
             this.flashButton1.ClickedImage = null;
             this.flashButton1.DisabledImage = null;
             this.flashButton1.Image = ((System.Drawing.Image)(resources.GetObject("flashButton1.Image")));
-            this.flashButton1.Location = new System.Drawing.Point(408, 121);
+            this.flashButton1.Location = new System.Drawing.Point(169, 125);
             this.flashButton1.Name = "flashButton1";
             this.flashButton1.NeutralImage = null;
             this.flashButton1.OverImage = null;
-            this.flashButton1.Size = new System.Drawing.Size(79, 29);
+            this.flashButton1.Size = new System.Drawing.Size(76, 36);
             this.flashButton1.TabIndex = 9;
             this.flashButton1.Text = "flashButton1";
             this.flashButton1.Click += new System.EventHandler(this.flashButton1_Click);
@@ -143,11 +125,11 @@
             this.flashButton3.ClickedImage = null;
             this.flashButton3.DisabledImage = null;
             this.flashButton3.Image = ((System.Drawing.Image)(resources.GetObject("flashButton3.Image")));
-            this.flashButton3.Location = new System.Drawing.Point(239, 54);
+            this.flashButton3.Location = new System.Drawing.Point(133, 51);
             this.flashButton3.Name = "flashButton3";
             this.flashButton3.NeutralImage = null;
             this.flashButton3.OverImage = null;
-            this.flashButton3.Size = new System.Drawing.Size(36, 36);
+            this.flashButton3.Size = new System.Drawing.Size(50, 41);
             this.flashButton3.TabIndex = 5;
             this.flashButton3.Text = "flashButton3";
             this.flashButton3.Click += new System.EventHandler(this.flashButton3_Click);
@@ -162,11 +144,11 @@
             this.BTN_CONVERSION.ClickedImage = null;
             this.BTN_CONVERSION.DisabledImage = null;
             this.BTN_CONVERSION.Image = ((System.Drawing.Image)(resources.GetObject("BTN_CONVERSION.Image")));
-            this.BTN_CONVERSION.Location = new System.Drawing.Point(58, 54);
+            this.BTN_CONVERSION.Location = new System.Drawing.Point(39, 52);
             this.BTN_CONVERSION.Name = "BTN_CONVERSION";
             this.BTN_CONVERSION.NeutralImage = null;
             this.BTN_CONVERSION.OverImage = null;
-            this.BTN_CONVERSION.Size = new System.Drawing.Size(36, 36);
+            this.BTN_CONVERSION.Size = new System.Drawing.Size(43, 40);
             this.BTN_CONVERSION.TabIndex = 3;
             this.BTN_CONVERSION.Text = "flashButton1";
             this.BTN_CONVERSION.Click += new System.EventHandler(this.BTN_CONVERSION_Click);
@@ -178,10 +160,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 162);
+            this.ClientSize = new System.Drawing.Size(257, 173);
             this.Controls.Add(this.flashButton1);
-            this.Controls.Add(this.LB_GÉRER);
-            this.Controls.Add(this.LB_EFFECTUER_CONVERSION);
             this.Controls.Add(this.flashButton3);
             this.Controls.Add(this.BTN_CONVERSION);
             this.Controls.Add(this.menuStrip1);
@@ -206,8 +186,6 @@
         private System.Windows.Forms.ToolStripMenuItem gérerLesUnitésToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem effectuerUneConversionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem quitterToolStripMenuItem2;
-        private System.Windows.Forms.Label LB_EFFECTUER_CONVERSION;
-        private System.Windows.Forms.Label LB_GÉRER;
         private Calculator.FlashButton flashButton1;
     }
 }
