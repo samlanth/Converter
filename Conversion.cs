@@ -62,17 +62,17 @@ namespace TP_DE_CONVERSION
         /* ---------------------------BTN_CONVERSION---------------------------- */
         private void btn_conversion_MouseHover(object sender, EventArgs e)
         {
-            this.btn_conversion.BackgroundImage = Properties.Resources.Icon_Survolé;
+            this.btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Over;
         }
 
         private void btn_conversion_MouseLeave(object sender, EventArgs e)
         {
-            this.btn_conversion.BackgroundImage = Properties.Resources.Icon_Neutral;
+            this.btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Neutral;
         }
 
         private void btn_conversion_MouseDown(object sender, MouseEventArgs e)
         {
-            this.btn_conversion.BackgroundImage = Properties.Resources.Icon_Cliqué;
+            this.btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Clicked;
         }
         /* ---------------------------BTN_CONVERSION---------------------------- */
         /* ---------------------------BTN_QUITTER---------------------------- */

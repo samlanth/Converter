@@ -37,10 +37,10 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.flashButton1 = new Calculator.FlashButton();
             this.btn_effacer_val = new Calculator.FlashButton();
             this.btn_conversion = new Calculator.FlashButton();
-            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // RB_Volume
@@ -140,12 +140,23 @@
             this.label1.TabIndex = 12;
             this.label1.Text = "Sélection du type d’unité";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(36, 75);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 13);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Conversion";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
             // flashButton1
             // 
             this.flashButton1.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.Button_Exit_Neutral;
             this.flashButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton1.ClickedImage = null;
             this.flashButton1.DisabledImage = null;
+            this.flashButton1.Image = ((System.Drawing.Image)(resources.GetObject("flashButton1.Image")));
             this.flashButton1.Location = new System.Drawing.Point(276, 151);
             this.flashButton1.Name = "flashButton1";
             this.flashButton1.NeutralImage = null;
@@ -163,6 +174,7 @@
             this.btn_effacer_val.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_effacer_val.ClickedImage = null;
             this.btn_effacer_val.DisabledImage = null;
+            this.btn_effacer_val.Image = ((System.Drawing.Image)(resources.GetObject("btn_effacer_val.Image")));
             this.btn_effacer_val.Location = new System.Drawing.Point(322, 100);
             this.btn_effacer_val.Name = "btn_effacer_val";
             this.btn_effacer_val.NeutralImage = null;
@@ -177,10 +189,11 @@
             // 
             // btn_conversion
             // 
-            this.btn_conversion.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_conversion.BackgroundImage")));
+            this.btn_conversion.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.convert_Icon_Neutral;
             this.btn_conversion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_conversion.ClickedImage = null;
             this.btn_conversion.DisabledImage = null;
+            this.btn_conversion.Image = ((System.Drawing.Image)(resources.GetObject("btn_conversion.Image")));
             this.btn_conversion.Location = new System.Drawing.Point(153, 100);
             this.btn_conversion.Name = "btn_conversion";
             this.btn_conversion.NeutralImage = null;
@@ -192,16 +205,6 @@
             this.btn_conversion.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_conversion_MouseDown);
             this.btn_conversion.MouseLeave += new System.EventHandler(this.btn_conversion_MouseLeave);
             this.btn_conversion.MouseHover += new System.EventHandler(this.btn_conversion_MouseHover);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(36, 75);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 13);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Conversion";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Conversion
             // 

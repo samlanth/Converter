@@ -67,17 +67,17 @@ namespace TP_DE_CONVERSION
         /* ---------------------------BTN_CONVERSION---------------------------- */
         private void BTN_CONVERSION_MouseHover(object sender, EventArgs e)
         {
-            this.BTN_CONVERSION.BackgroundImage = Properties.Resources.Icon_Survolé;
+            this.BTN_CONVERSION.BackgroundImage = Properties.Resources.convert_Icon_Over;
         }
 
         private void BTN_CONVERSION_MouseLeave(object sender, EventArgs e)
         {
-            this.BTN_CONVERSION.BackgroundImage = Properties.Resources.Icon_Neutral; 
+            this.BTN_CONVERSION.BackgroundImage = Properties.Resources.convert_Icon_Neutral; 
         }
 
         private void BTN_CONVERSION_MouseDown(object sender, MouseEventArgs e)
         {
-            this.BTN_CONVERSION.BackgroundImage = Properties.Resources.Icon_Cliqué;
+            this.BTN_CONVERSION.BackgroundImage = Properties.Resources.convert_Icon_Clicked;
         }
         /* ---------------------------BTN_CONVERSION---------------------------- */
 
@@ -128,17 +128,17 @@ namespace TP_DE_CONVERSION
 
         private void flashButton1_MouseHover(object sender, EventArgs e)
         {
-            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Hover;
+            this.flashButton1.BackgroundImage = Properties.Resources.back_undo_return_button_png_5;
         }
 
         private void flashButton1_MouseDown(object sender, MouseEventArgs e)
         {
-            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Click;
+            this.flashButton1.BackgroundImage = Properties.Resources.back_undo_return_button_png_5;
         }
 
         private void flashButton1_MouseLeave(object sender, EventArgs e)
         {
-            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Neutral;
+            this.flashButton1.BackgroundImage = Properties.Resources.convert_Icon_Neutral;
         }
 
         private void flashButton3_Click(object sender, EventArgs e)
@@ -158,6 +158,11 @@ namespace TP_DE_CONVERSION
         }
 
         private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flashButton2_Click_1(object sender, EventArgs e)
         {
 
         }

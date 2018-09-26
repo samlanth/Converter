@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Ajouter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter.Designer.cs">
+      <DependentUpon>Ajouter.cs</DependentUpon>
+    </Compile>
     <Compile Include="Conversion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,9 +70,24 @@
     <Compile Include="Gestion.Designer.cs">
       <DependentUpon>Gestion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Modifier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modifier.Designer.cs">
+      <DependentUpon>Modifier.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Retirer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Retirer.Designer.cs">
+      <DependentUpon>Retirer.cs</DependentUpon>
+    </Compile>
     <Compile Include="Unit.cs" />
+    <EmbeddedResource Include="Ajouter.resx">
+      <DependentUpon>Ajouter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Conversion.resx">
       <DependentUpon>Conversion.cs</DependentUpon>
     </EmbeddedResource>
@@ -79,6 +100,9 @@
     <EmbeddedResource Include="Gestion.resx">
       <DependentUpon>Gestion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modifier.resx">
+      <DependentUpon>Modifier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -89,6 +113,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Retirer.resx">
+      <DependentUpon>Retirer.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -185,6 +212,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\ICON_Ajouter_Over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convert Icon Clicked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convert Icon Disabled.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convert Icon Neutral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\convert Icon Over.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="back-undo-return-button-png-5.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

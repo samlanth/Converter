@@ -63,6 +63,16 @@ namespace TP_DE_CONVERSION.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap back_undo_return_button_png_5 {
+            get {
+                object obj = ResourceManager.GetObject("back_undo_return_button_png_5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Button_Exit_Click {
             get {
                 object obj = ResourceManager.GetObject("Button_Exit_Click", resourceCulture);
@@ -96,6 +106,46 @@ namespace TP_DE_CONVERSION.Properties {
         internal static System.Drawing.Bitmap button_quit_hover {
             get {
                 object obj = ResourceManager.GetObject("button_quit_hover", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap convert_Icon_Clicked {
+            get {
+                object obj = ResourceManager.GetObject("convert_Icon_Clicked", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap convert_Icon_Disabled {
+            get {
+                object obj = ResourceManager.GetObject("convert_Icon_Disabled", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap convert_Icon_Neutral {
+            get {
+                object obj = ResourceManager.GetObject("convert_Icon_Neutral", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap convert_Icon_Over {
+            get {
+                object obj = ResourceManager.GetObject("convert_Icon_Over", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

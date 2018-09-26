@@ -54,7 +54,7 @@
             this.quitterToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(257, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(391, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -101,16 +101,16 @@
             // 
             // flashButton1
             // 
-            this.flashButton1.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.Button_Exit_Neutral;
+            this.flashButton1.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.back_undo_return_button_png_5;
             this.flashButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton1.ClickedImage = null;
             this.flashButton1.DisabledImage = null;
             this.flashButton1.Image = ((System.Drawing.Image)(resources.GetObject("flashButton1.Image")));
-            this.flashButton1.Location = new System.Drawing.Point(169, 125);
+            this.flashButton1.Location = new System.Drawing.Point(273, 35);
             this.flashButton1.Name = "flashButton1";
             this.flashButton1.NeutralImage = null;
             this.flashButton1.OverImage = null;
-            this.flashButton1.Size = new System.Drawing.Size(76, 36);
+            this.flashButton1.Size = new System.Drawing.Size(92, 73);
             this.flashButton1.TabIndex = 9;
             this.flashButton1.Text = "flashButton1";
             this.flashButton1.Click += new System.EventHandler(this.flashButton1_Click);
@@ -125,11 +125,11 @@
             this.flashButton3.ClickedImage = null;
             this.flashButton3.DisabledImage = null;
             this.flashButton3.Image = ((System.Drawing.Image)(resources.GetObject("flashButton3.Image")));
-            this.flashButton3.Location = new System.Drawing.Point(133, 51);
+            this.flashButton3.Location = new System.Drawing.Point(164, 43);
             this.flashButton3.Name = "flashButton3";
             this.flashButton3.NeutralImage = null;
             this.flashButton3.OverImage = null;
-            this.flashButton3.Size = new System.Drawing.Size(50, 41);
+            this.flashButton3.Size = new System.Drawing.Size(74, 65);
             this.flashButton3.TabIndex = 5;
             this.flashButton3.Text = "flashButton3";
             this.flashButton3.Click += new System.EventHandler(this.flashButton3_Click);
@@ -139,16 +139,16 @@
             // 
             // BTN_CONVERSION
             // 
-            this.BTN_CONVERSION.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.Icon_Neutral;
+            this.BTN_CONVERSION.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.convert_Icon_Neutral;
             this.BTN_CONVERSION.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BTN_CONVERSION.ClickedImage = null;
             this.BTN_CONVERSION.DisabledImage = null;
             this.BTN_CONVERSION.Image = ((System.Drawing.Image)(resources.GetObject("BTN_CONVERSION.Image")));
-            this.BTN_CONVERSION.Location = new System.Drawing.Point(39, 52);
+            this.BTN_CONVERSION.Location = new System.Drawing.Point(42, 35);
             this.BTN_CONVERSION.Name = "BTN_CONVERSION";
             this.BTN_CONVERSION.NeutralImage = null;
             this.BTN_CONVERSION.OverImage = null;
-            this.BTN_CONVERSION.Size = new System.Drawing.Size(43, 40);
+            this.BTN_CONVERSION.Size = new System.Drawing.Size(81, 73);
             this.BTN_CONVERSION.TabIndex = 3;
             this.BTN_CONVERSION.Text = "flashButton1";
             this.BTN_CONVERSION.Click += new System.EventHandler(this.BTN_CONVERSION_Click);
@@ -160,13 +160,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(257, 173);
+            this.ClientSize = new System.Drawing.Size(391, 136);
             this.Controls.Add(this.flashButton1);
             this.Controls.Add(this.flashButton3);
             this.Controls.Add(this.BTN_CONVERSION);
             this.Controls.Add(this.menuStrip1);
             this.Name = "Form1";
-            this.Text = "Accueil de l’application ";
+            this.Text = "Conversion";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

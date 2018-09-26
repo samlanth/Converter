@@ -10,3 +10,6 @@ C:\Users\Samuel\Desktop\DEVOIR ECOLE\Devel Interface Personne c#\TP DE CONVERSIO
 C:\Users\Samuel\Desktop\DEVOIR ECOLE\Devel Interface Personne c#\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Form1.resources
 C:\Users\Samuel\Desktop\DEVOIR ECOLE\Devel Interface Personne c#\TP DE CONVERSION\obj\Debug\TP DE CONVERSION.csprojResolveAssemblyReference.cache
 C:\Users\Samuel\Desktop\DEVOIR ECOLE\Devel Interface Personne c#\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Gestion.resources
+C:\Users\Samuel\Desktop\DEVOIR ECOLE\Devel Interface Personne c#\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Ajouter.resources
+C:\Users\Samuel\Desktop\DEVOIR ECOLE\Devel Interface Personne c#\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Retirer.resources
+C:\Users\Samuel\Desktop\DEVOIR ECOLE\Devel Interface Personne c#\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Modifier.resources

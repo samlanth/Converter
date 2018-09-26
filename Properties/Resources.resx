@@ -178,6 +178,21 @@
   <data name="button_quit_hover" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\button quit hover.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="back_undo_return_button_png_5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\back-undo-return-button-png-5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="convert_Icon_Clicked" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\convert Icon Clicked.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="convert_Icon_Disabled" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\convert Icon Disabled.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="convert_Icon_Neutral" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\convert Icon Neutral.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="convert_Icon_Over" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\convert Icon Over.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ICON_Accepter_Click" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ICON_Accepter_Click.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
