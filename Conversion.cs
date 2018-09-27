@@ -25,7 +25,7 @@ namespace TP_DE_CONVERSION
         {
             if (string.IsNullOrEmpty(Resultat_Conversion.Text))
             {
-                Resultat_Conversion.Text = CONVERTER.Convert(Int32.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+                Resultat_Conversion.Text = CONVERTER.Convert(decimal.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
             }
         }
 
@@ -189,13 +189,20 @@ namespace TP_DE_CONVERSION
 
         private void TB_Values_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(TB_Values.Text))
+            try
             {
-                
+                if (string.IsNullOrEmpty(TB_Values.Text))
+                {
+
+                }
+                else
+                {
+                    Resultat_Conversion.Text = CONVERTER.Convert(decimal.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+                }
             }
-            else
+            catch
             {
-                Resultat_Conversion.Text = CONVERTER.Convert(Int32.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+                MessageBox.Show("Valeur entrer est invalide");
             }
         }
 
@@ -207,7 +214,7 @@ namespace TP_DE_CONVERSION
             }
             else
             {
-                Resultat_Conversion.Text = CONVERTER.Convert(Int32.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+                Resultat_Conversion.Text = CONVERTER.Convert(decimal.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
             }
         }
 
@@ -219,7 +226,7 @@ namespace TP_DE_CONVERSION
             }
             else
             {
-                Resultat_Conversion.Text = CONVERTER.Convert(Int32.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+                Resultat_Conversion.Text = CONVERTER.Convert(decimal.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
             }
         }
 
@@ -231,7 +238,7 @@ namespace TP_DE_CONVERSION
             }
             else
             {
-                Resultat_Conversion.Text = CONVERTER.Convert(Int32.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+                Resultat_Conversion.Text = CONVERTER.Convert(decimal.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
             }
         }
 
@@ -243,7 +250,7 @@ namespace TP_DE_CONVERSION
             }
             else
             {
-                Resultat_Conversion.Text = CONVERTER.Convert(Int32.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+                Resultat_Conversion.Text = CONVERTER.Convert(decimal.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
             }
         }
 
@@ -255,7 +262,7 @@ namespace TP_DE_CONVERSION
             }
             else
             {
-                Resultat_Conversion.Text = CONVERTER.Convert(Int32.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+                Resultat_Conversion.Text = CONVERTER.Convert(decimal.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
             }
         }
     }

@@ -128,17 +128,17 @@ namespace TP_DE_CONVERSION
 
         private void flashButton1_MouseHover(object sender, EventArgs e)
         {
-            this.flashButton1.BackgroundImage = Properties.Resources.back_undo_return_button_png_5;
+            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Hover;
         }
 
         private void flashButton1_MouseDown(object sender, MouseEventArgs e)
         {
-            this.flashButton1.BackgroundImage = Properties.Resources.back_undo_return_button_png_5;
+            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Click;
         }
 
         private void flashButton1_MouseLeave(object sender, EventArgs e)
         {
-            this.flashButton1.BackgroundImage = Properties.Resources.convert_Icon_Neutral;
+            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Neutral;
         }
 
         private void flashButton3_Click(object sender, EventArgs e)
