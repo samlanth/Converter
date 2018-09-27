@@ -85,6 +85,7 @@
             this.effectuerUneConversionToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.G)));
             this.effectuerUneConversionToolStripMenuItem.Size = new System.Drawing.Size(250, 22);
             this.effectuerUneConversionToolStripMenuItem.Text = "Gérer les unités de mesure";
+            this.effectuerUneConversionToolStripMenuItem.Click += new System.EventHandler(this.effectuerUneConversionToolStripMenuItem_Click_1);
             // 
             // quitterToolStripMenuItem2
             // 

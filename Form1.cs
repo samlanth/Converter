@@ -140,8 +140,7 @@ namespace TP_DE_CONVERSION
         {
             this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Neutral;
         }
-
-        private void flashButton3_Click(object sender, EventArgs e)
+        private void Effectuer_Gestion()
         {
             Gestion dlg = new Gestion();
             dlg.DisplayName = DisplayName;
@@ -150,6 +149,18 @@ namespace TP_DE_CONVERSION
             {
                 DisplayName = dlg.DisplayName;
             }
+        }
+
+        private void flashButton3_Click(object sender, EventArgs e)
+        {
+            Effectuer_Gestion();
+            //Gestion dlg = new Gestion();
+            //dlg.DisplayName = DisplayName;
+
+            //if (dlg.ShowDialog() == DialogResult.OK)
+            //{
+            //    DisplayName = dlg.DisplayName;
+            //}
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -165,6 +176,11 @@ namespace TP_DE_CONVERSION
         private void flashButton2_Click_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void effectuerUneConversionToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            Effectuer_Gestion();
         }
 
         //private void InitializeComponent()
