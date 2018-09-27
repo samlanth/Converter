@@ -131,7 +131,7 @@ namespace TP_DE_CONVERSION
             {
                 listBox1.Items.Add(unit);
             }
-
+            listBox1.SelectedIndex = 0;
         }
 
         private void flashButton1_Click(object sender, EventArgs e)
@@ -154,7 +154,7 @@ namespace TP_DE_CONVERSION
             {
                 listBox1.Items.Add(unit);
             }
-
+            listBox1.SelectedIndex = 0;
         }
 
         private void Gestion_Enter(object sender, EventArgs e)
