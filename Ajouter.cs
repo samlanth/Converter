@@ -39,6 +39,7 @@ namespace TP_DE_CONVERSION
 
         private void flashButton1_MouseClick(object sender, MouseEventArgs e)
         {
+            this.flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Click;
         }
 
         private void flashButton2_Click(object sender, EventArgs e)
@@ -98,6 +99,16 @@ namespace TP_DE_CONVERSION
         private void RB_VOLUME_CheckedChanged(object sender, EventArgs e)
         {
             label1.Text = "Valeur Métrique (Litre)";
+        }
+
+        private void flashButton1_MouseHover(object sender, EventArgs e)
+        {
+            this.flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Over;
+        }
+
+        private void flashButton1_MouseLeave(object sender, EventArgs e)
+        {
+            this.flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Neutral;
         }
     }
     

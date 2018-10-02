@@ -41,6 +41,7 @@
             this.flashButton1 = new Calculator.FlashButton();
             this.btn_effacer_val = new Calculator.FlashButton();
             this.btn_conversion = new Calculator.FlashButton();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // RB_Volume
@@ -49,7 +50,7 @@
             this.RB_Volume.Location = new System.Drawing.Point(22, 42);
             this.RB_Volume.Name = "RB_Volume";
             this.RB_Volume.Size = new System.Drawing.Size(60, 17);
-            this.RB_Volume.TabIndex = 0;
+            this.RB_Volume.TabIndex = 1;
             this.RB_Volume.TabStop = true;
             this.RB_Volume.Text = "Volume";
             this.RB_Volume.UseVisualStyleBackColor = true;
@@ -62,7 +63,7 @@
             this.RB_POIDS.Location = new System.Drawing.Point(138, 42);
             this.RB_POIDS.Name = "RB_POIDS";
             this.RB_POIDS.Size = new System.Drawing.Size(51, 17);
-            this.RB_POIDS.TabIndex = 1;
+            this.RB_POIDS.TabIndex = 2;
             this.RB_POIDS.TabStop = true;
             this.RB_POIDS.Text = "Poids";
             this.RB_POIDS.UseVisualStyleBackColor = true;
@@ -75,7 +76,7 @@
             this.RB_Distance.Location = new System.Drawing.Point(249, 42);
             this.RB_Distance.Name = "RB_Distance";
             this.RB_Distance.Size = new System.Drawing.Size(67, 17);
-            this.RB_Distance.TabIndex = 2;
+            this.RB_Distance.TabIndex = 3;
             this.RB_Distance.TabStop = true;
             this.RB_Distance.Text = "Distance";
             this.RB_Distance.UseVisualStyleBackColor = true;
@@ -87,8 +88,7 @@
             this.TB_Values.Location = new System.Drawing.Point(22, 91);
             this.TB_Values.Name = "TB_Values";
             this.TB_Values.Size = new System.Drawing.Size(121, 20);
-            this.TB_Values.TabIndex = 5;
-            this.TB_Values.Text = "1";
+            this.TB_Values.TabIndex = 4;
             this.TB_Values.TextChanged += new System.EventHandler(this.TB_Values_TextChanged);
             this.TB_Values.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TB_Values_KeyPress);
             // 
@@ -108,7 +108,7 @@
             this.comboBox1.Location = new System.Drawing.Point(22, 124);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 10;
+            this.comboBox1.TabIndex = 5;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.comboBox1.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
             // 
@@ -128,7 +128,7 @@
             this.comboBox2.Location = new System.Drawing.Point(195, 124);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 11;
+            this.comboBox2.TabIndex = 7;
             this.comboBox2.SelectedValueChanged += new System.EventHandler(this.comboBox2_SelectedValueChanged);
             // 
             // label1
@@ -162,15 +162,15 @@
             this.flashButton1.NeutralImage = null;
             this.flashButton1.OverImage = null;
             this.flashButton1.Size = new System.Drawing.Size(82, 31);
-            this.flashButton1.TabIndex = 13;
-            this.flashButton1.Text = "flashButton1";
+            this.flashButton1.TabIndex = 9;
+            this.flashButton1.Click += new System.EventHandler(this.flashButton1_Click);
             this.flashButton1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.flashButton1_MouseDown);
             this.flashButton1.MouseLeave += new System.EventHandler(this.flashButton1_MouseLeave);
             this.flashButton1.MouseHover += new System.EventHandler(this.flashButton1_MouseHover);
             // 
             // btn_effacer_val
             // 
-            this.btn_effacer_val.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_effacer_val.BackgroundImage")));
+            this.btn_effacer_val.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.ICON_Effacer_Neutral;
             this.btn_effacer_val.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_effacer_val.ClickedImage = null;
             this.btn_effacer_val.DisabledImage = null;
@@ -181,7 +181,6 @@
             this.btn_effacer_val.OverImage = null;
             this.btn_effacer_val.Size = new System.Drawing.Size(36, 36);
             this.btn_effacer_val.TabIndex = 8;
-            this.btn_effacer_val.Text = "flashButton2";
             this.btn_effacer_val.Click += new System.EventHandler(this.btn_effacer_val_Click);
             this.btn_effacer_val.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_effacer_val_MouseDown);
             this.btn_effacer_val.MouseLeave += new System.EventHandler(this.btn_effacer_val_MouseLeave);
@@ -199,18 +198,28 @@
             this.btn_conversion.NeutralImage = null;
             this.btn_conversion.OverImage = null;
             this.btn_conversion.Size = new System.Drawing.Size(36, 36);
-            this.btn_conversion.TabIndex = 7;
+            this.btn_conversion.TabIndex = 6;
             this.btn_conversion.Text = "flashButton1";
             this.btn_conversion.Click += new System.EventHandler(this.btn_conversion_Click);
             this.btn_conversion.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btn_conversion_MouseDown);
             this.btn_conversion.MouseLeave += new System.EventHandler(this.btn_conversion_MouseLeave);
             this.btn_conversion.MouseHover += new System.EventHandler(this.btn_conversion_MouseHover);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(235, 75);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Resultat";
+            // 
             // Conversion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(358, 188);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.flashButton1);
             this.Controls.Add(this.label1);
@@ -225,6 +234,7 @@
             this.Controls.Add(this.RB_Volume);
             this.Name = "Conversion";
             this.Text = "Conversion";
+            this.Load += new System.EventHandler(this.Conversion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,5 +254,6 @@
         private System.Windows.Forms.Label label1;
         private Calculator.FlashButton flashButton1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }

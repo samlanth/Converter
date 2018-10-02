@@ -108,9 +108,9 @@ namespace TP_DE_CONVERSION
 
         private void flashButton3_MouseDown(object sender, MouseEventArgs e)
         {
-
-            this.Close();
             this.flashButton3.BackgroundImage = Properties.Resources.Button_Exit_Click;
+           
+            
         }
 
         private void flashButton3_MouseHover(object sender, EventArgs e)
@@ -165,6 +165,31 @@ namespace TP_DE_CONVERSION
                 listBox1.Items.Add(unit);
            
             }
+        }
+
+        private void flashButton4_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.flashButton4.BackgroundImage = Properties.Resources.ICON_Editer_Click;
+        }
+
+        private void flashButton4_MouseClick(object sender, MouseEventArgs e)
+        {
+            //this.flashButton4.BackgroundImage = Properties.Resources.ICON_Editer_Click;
+        }
+
+        private void flashButton4_MouseHover(object sender, EventArgs e)
+        {
+            this.flashButton4.BackgroundImage = Properties.Resources.ICON_Editer_Survol;
+        }
+
+        private void flashButton4_MouseLeave(object sender, EventArgs e)
+        {
+            this.flashButton4.BackgroundImage = Properties.Resources.ICON_Editer_Neutre;
+        }
+
+        private void flashButton3_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
         //        ---------------------AJOUTER---------------------------------------
     }

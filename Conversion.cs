@@ -23,10 +23,15 @@ namespace TP_DE_CONVERSION
 
         private void btn_conversion_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(Resultat_Conversion.Text))
+            if (string.IsNullOrEmpty(TB_Values.Text))
+            {
+                Resultat_Conversion.Text = "";
+            }
+            else
             {
                 Resultat_Conversion.Text = CONVERTER.Convert(decimal.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
             }
+            
         }
 
         private void btn_quitter_Click(object sender, EventArgs e)
@@ -36,11 +41,23 @@ namespace TP_DE_CONVERSION
 
         private void btn_effacer_val_Click(object sender, EventArgs e)
         {
-
-
-            TB_Values.Text = "1";
+            TB_Values.Text = "";
             Resultat_Conversion.Text = "";
 
+            if (string.IsNullOrEmpty(TB_Values.Text) == false)
+            {
+                btn_conversion.Enabled = true;
+                btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Neutral;
+                btn_effacer_val.Enabled = true;
+                btn_effacer_val.BackgroundImage = Properties.Resources.ICON_Effacer_Neutral;
+            }
+            else
+            {
+                btn_conversion.Enabled = false;
+                btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Disabled;
+                btn_effacer_val.Enabled = false;
+                btn_effacer_val.BackgroundImage = Properties.Resources.ICON_Effacer_Disable;
+            }
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -62,17 +79,20 @@ namespace TP_DE_CONVERSION
         /* ---------------------------BTN_CONVERSION---------------------------- */
         private void btn_conversion_MouseHover(object sender, EventArgs e)
         {
-            this.btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Over;
+            
+                this.btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Over;
         }
 
         private void btn_conversion_MouseLeave(object sender, EventArgs e)
         {
-            this.btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Neutral;
+            
+                this.btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Neutral;
         }
 
         private void btn_conversion_MouseDown(object sender, MouseEventArgs e)
         {
-            this.btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Clicked;
+            
+                this.btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Clicked;
         }
         /* ---------------------------BTN_CONVERSION---------------------------- */
         /* ---------------------------BTN_QUITTER---------------------------- */
@@ -99,7 +119,16 @@ namespace TP_DE_CONVERSION
 
         private void btn_effacer_val_MouseLeave(object sender, EventArgs e)
         {
-            this.btn_effacer_val.BackgroundImage = Properties.Resources.ICON_Effacer_Neutral;
+            if (string.IsNullOrEmpty(TB_Values.Text) == false)
+            {
+                btn_effacer_val.Enabled = true;
+                btn_effacer_val.BackgroundImage = Properties.Resources.ICON_Effacer_Neutral;
+            }
+            else
+            {
+                btn_effacer_val.Enabled = false;
+                btn_effacer_val.BackgroundImage = Properties.Resources.ICON_Effacer_Disable;
+            }
         }
 
         private void btn_effacer_val_MouseDown(object sender, MouseEventArgs e)
@@ -121,12 +150,27 @@ namespace TP_DE_CONVERSION
             {
                 e.Handled = true;
             }
+
+            if (string.IsNullOrEmpty(TB_Values.Text) == false)
+            {
+                btn_conversion.Enabled = true;
+                btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Neutral;
+                btn_effacer_val.Enabled = true;
+                btn_effacer_val.BackgroundImage = Properties.Resources.ICON_Effacer_Neutral;
+            }
+            else
+            {
+                btn_conversion.Enabled = false;
+                btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Disabled;
+                btn_effacer_val.Enabled = false;
+                btn_effacer_val.BackgroundImage = Properties.Resources.ICON_Effacer_Disable;
+            }
         }
 
         private void flashButton1_MouseDown(object sender, MouseEventArgs e)
         {
             this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Click;
-            this.Close();
+           
         }
 
         private void flashButton1_MouseHover(object sender, EventArgs e)
@@ -193,11 +237,26 @@ namespace TP_DE_CONVERSION
             {
                 if (string.IsNullOrEmpty(TB_Values.Text))
                 {
-
+                    Resultat_Conversion.Text = "";
                 }
                 else
                 {
-                    Resultat_Conversion.Text = CONVERTER.Convert(decimal.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+                   Resultat_Conversion.Text = CONVERTER.Convert(decimal.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
+                }
+
+                if (string.IsNullOrEmpty(TB_Values.Text) == false)
+                {
+                    btn_conversion.Enabled = true;
+                    btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Neutral;
+                    btn_effacer_val.Enabled = true;
+                    btn_effacer_val.BackgroundImage = Properties.Resources.ICON_Effacer_Neutral;
+                }
+                else
+                {
+                    btn_conversion.Enabled = false;
+                    btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Disabled;
+                    btn_effacer_val.Enabled = false;
+                    btn_effacer_val.BackgroundImage = Properties.Resources.ICON_Effacer_Disable;
                 }
             }
             catch
@@ -264,6 +323,22 @@ namespace TP_DE_CONVERSION
             {
                 Resultat_Conversion.Text = CONVERTER.Convert(decimal.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
             }
+        }
+
+        private void Conversion_Load(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(TB_Values.Text))
+            {
+                btn_conversion.Enabled = false;
+                btn_conversion.BackgroundImage  = Properties.Resources.convert_Icon_Disabled;
+                btn_effacer_val.Enabled = false;
+                btn_effacer_val.BackgroundImage = Properties.Resources.ICON_Effacer_Disable;
+            }
+        }
+
+        private void flashButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

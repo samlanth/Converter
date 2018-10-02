@@ -71,6 +71,10 @@
             this.flashButton4.Text = "flashButton4";
             this.flashButton4.UseVisualStyleBackColor = true;
             this.flashButton4.Click += new System.EventHandler(this.flashButton4_Click);
+            this.flashButton4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.flashButton4_MouseClick);
+            this.flashButton4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.flashButton4_MouseDown);
+            this.flashButton4.MouseLeave += new System.EventHandler(this.flashButton4_MouseLeave);
+            this.flashButton4.MouseHover += new System.EventHandler(this.flashButton4_MouseHover);
             // 
             // flashButton3
             // 
@@ -87,6 +91,7 @@
             this.flashButton3.TabIndex = 4;
             this.flashButton3.Text = "flashButton3";
             this.flashButton3.UseVisualStyleBackColor = true;
+            this.flashButton3.Click += new System.EventHandler(this.flashButton3_Click);
             this.flashButton3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.flashButton3_MouseDown);
             this.flashButton3.MouseLeave += new System.EventHandler(this.flashButton3_MouseLeave);
             this.flashButton3.MouseHover += new System.EventHandler(this.flashButton3_MouseHover);
