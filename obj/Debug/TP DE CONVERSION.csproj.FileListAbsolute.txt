@@ -13,3 +13,19 @@ C:\Users\Samuel\Desktop\DEVOIR ECOLE\Devel Interface Personne c#\TP DE CONVERSIO
 C:\Users\Samuel\Desktop\DEVOIR ECOLE\Devel Interface Personne c#\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Ajouter.resources
 C:\Users\Samuel\Desktop\DEVOIR ECOLE\Devel Interface Personne c#\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Retirer.resources
 C:\Users\Samuel\Desktop\DEVOIR ECOLE\Devel Interface Personne c#\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Modifier.resources
+C:\000Work\TP DE CONVERSION\bin\Debug\TP DE CONVERSION.exe
+C:\000Work\TP DE CONVERSION\bin\Debug\TP DE CONVERSION.pdb
+C:\000Work\TP DE CONVERSION\obj\Debug\TP DE CONVERSION.csprojResolveAssemblyReference.cache
+C:\000Work\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Ajouter.resources
+C:\000Work\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Conversion.resources
+C:\000Work\TP DE CONVERSION\obj\Debug\Calculator.FlashButton.resources
+C:\000Work\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Form1.resources
+C:\000Work\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Gestion.resources
+C:\000Work\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Info.resources
+C:\000Work\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Modifier.resources
+C:\000Work\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Properties.Resources.resources
+C:\000Work\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Retirer.resources
+C:\000Work\TP DE CONVERSION\obj\Debug\TP DE CONVERSION.csproj.GenerateResource.Cache
+C:\000Work\TP DE CONVERSION\obj\Debug\TP DE CONVERSION.csproj.CoreCompileInputs.cache
+C:\000Work\TP DE CONVERSION\obj\Debug\TP DE CONVERSION.exe
+C:\000Work\TP DE CONVERSION\obj\Debug\TP DE CONVERSION.pdb
