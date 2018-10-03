@@ -18,6 +18,7 @@ namespace TP_DE_CONVERSION
         public Gestion()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         private void Ajouter_Unité()
         {
@@ -50,6 +51,16 @@ namespace TP_DE_CONVERSION
 
             }
         }
+        private void Info()
+        {
+            Info dlg = new Info();
+
+
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+
+            }
+        }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -63,6 +74,7 @@ namespace TP_DE_CONVERSION
 
         private void Gestion_Load(object sender, EventArgs e)
         {
+
             foreach (Unit unit in CONVERTER.GetAllUnits())
             {
                 listBox1.Items.Add(unit);            
@@ -72,7 +84,8 @@ namespace TP_DE_CONVERSION
             toolTip1.SetToolTip(this.flashButton1, "Ajouter une Unité");
             toolTip1.SetToolTip(this.flashButton2, "Retirer une Unité");
             toolTip1.SetToolTip(this.flashButton4, "Modifier une Unité");
-
+            toolTip1.SetToolTip(this.flashButton3, "Retour");
+            toolTip1.SetToolTip(this.flashButton5, "Raccourcis de clavier");
         }
 //        ---------------------EFFACER---------------------------------------
         private void flashButton2_MouseDown(object sender, MouseEventArgs e)
@@ -190,6 +203,74 @@ namespace TP_DE_CONVERSION
         private void flashButton3_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void flashButton1_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void Gestion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           
+        }
+
+        private void flashButton5_MouseHover(object sender, EventArgs e)
+        {
+            this.flashButton5.BackgroundImage = Properties.Resources.QuestionMark2;
+        }
+
+        private void flashButton5_MouseLeave(object sender, EventArgs e)
+        {
+            this.flashButton5.BackgroundImage = Properties.Resources.QuestionMark;
+        }
+
+        private void flashButton5_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.flashButton5.BackgroundImage = Properties.Resources.QuestionMark3;
+        }
+
+        private void flashButton5_Click(object sender, EventArgs e)
+        {
+            Info();
+        }
+
+        private void Gestion_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+                
+        }
+
+        private void listBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F1)
+
+            {
+
+                flashButton5.PerformClick();
+
+            }
+            if (e.KeyCode == Keys.Enter)
+
+            {
+
+                flashButton4.PerformClick();
+
+            }
+            if (e.KeyCode == Keys.Add)
+
+            {
+
+                flashButton1.PerformClick();
+
+            }
+            if (e.KeyCode == Keys.Back)
+
+            {
+
+                flashButton2.PerformClick();
+
+            }
         }
         //        ---------------------AJOUTER---------------------------------------
     }

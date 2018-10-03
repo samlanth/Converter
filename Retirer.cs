@@ -17,6 +17,7 @@ namespace TP_DE_CONVERSION
         {
             unitToDelete = U;
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void flashButton1_Click(object sender, EventArgs e)
@@ -31,6 +32,10 @@ namespace TP_DE_CONVERSION
             textBox1.Text = unitToDelete.Name;
             textBox2.Text = unitToDelete.MetricValue.ToString();
             textBox3.Text = unitToDelete.Type.ToString();
+            ToolTip toolTip1 = new ToolTip();
+            toolTip1.SetToolTip(this.flashButton1, "Accepter de retirer l'unité et revenir a la gestion");
+            toolTip1.SetToolTip(this.flashButton2, "Annuler et revenir a la gestion");
+
         }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
@@ -61,6 +66,21 @@ namespace TP_DE_CONVERSION
         private void flashButton2_MouseLeave(object sender, EventArgs e)
         {
             this.flashButton2.BackgroundImage = Properties.Resources.Button_Exit_Neutral;
+        }
+
+        private void flashButton1_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Click;
+        }
+
+        private void flashButton1_MouseHover(object sender, EventArgs e)
+        {
+            this.flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Over;
+        }
+
+        private void flashButton1_MouseLeave(object sender, EventArgs e)
+        {
+            this.flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Neutral;
         }
     }
 }

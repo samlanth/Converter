@@ -19,6 +19,7 @@ namespace TP_DE_CONVERSION
         public Conversion()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btn_conversion_Click(object sender, EventArgs e)

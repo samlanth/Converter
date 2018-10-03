@@ -16,6 +16,7 @@ namespace TP_DE_CONVERSION
         public Ajouter()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
         
 
@@ -84,6 +85,13 @@ namespace TP_DE_CONVERSION
                 this.Close();
 
             }
+            if (string.IsNullOrEmpty(textBox1.Text) == false)
+            {
+                flashButton1.Enabled = true;
+                flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Neutral;
+
+            }
+
         }
 
         private void RB_POIDS_CheckedChanged(object sender, EventArgs e)
@@ -108,7 +116,119 @@ namespace TP_DE_CONVERSION
 
         private void flashButton1_MouseLeave(object sender, EventArgs e)
         {
-            this.flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Neutral;
+            if (string.IsNullOrEmpty(textBox1.Text) == false)
+            {
+                flashButton1.Enabled = true;
+                this.flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Neutral;
+            }
+            else
+            {
+                flashButton1.Enabled = false;
+                flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Disable;
+            }
+            
+        }
+
+        private void flashButton1_MouseDown(object sender, MouseEventArgs e)
+        {
+            this.flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Click;
+        }
+
+        private void Ajouter_Load(object sender, EventArgs e)
+        {
+            ToolTip toolTip1 = new ToolTip();
+            toolTip1.SetToolTip(this.flashButton1, "Accepter l'ajout et revenir a la gestion");
+            toolTip1.SetToolTip(this.flashButton2, "Annuler et revenir a la gestion");
+            if (string.IsNullOrEmpty(textBox1.Text))
+            {
+                
+                flashButton1.Enabled = false;
+                flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Disable;
+            }
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+            if (string.IsNullOrEmpty(textBox1.Text) == false)
+            {
+                
+                flashButton1.Enabled = true;
+                flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Neutral;
+            }
+            else
+            {
+                
+                flashButton1.Enabled = false;
+                flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Disable;
+            }
+            
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBox2.Text) == false)
+            {
+
+                flashButton1.Enabled = true;
+                flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Neutral;
+            }
+            else
+            {
+
+                flashButton1.Enabled = false;
+                flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Disable;
+            }
+          
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space);
+            if (string.IsNullOrEmpty(textBox1.Text) == false)
+            {
+               
+                flashButton1.Enabled = true;
+                flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Neutral;
+            }
+            else
+            {
+
+                flashButton1.Enabled = false;
+                flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Disable;
+            }
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                flashButton1.PerformClick();
+            }
+        }
+
+        private void textBox2_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                flashButton1.PerformClick();
+            }
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+        (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+
+            // only allow one decimal point
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
         }
     }
     

@@ -16,6 +16,7 @@ namespace TP_DE_CONVERSION
         public Form1()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void Effectuer_Conversion()
@@ -119,6 +120,8 @@ namespace TP_DE_CONVERSION
             ToolTip toolTip1 = new ToolTip();
             toolTip1.SetToolTip(this.BTN_CONVERSION, "Conversion d'Unité");
             toolTip1.SetToolTip(this.flashButton3, "Ajouter une Unité");
+            toolTip1.SetToolTip(this.flashButton1, "Quitter");
+            
         }
 
         private void flashButton1_Click(object sender, EventArgs e)

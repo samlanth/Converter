@@ -28,3 +28,4 @@ C:\000Work\TP DE CONVERSION\obj\Debug\TP DE CONVERSION.csproj.GenerateResource.C
 C:\000Work\TP DE CONVERSION\obj\Debug\TP DE CONVERSION.csproj.CoreCompileInputs.cache
 C:\000Work\TP DE CONVERSION\obj\Debug\TP DE CONVERSION.exe
 C:\000Work\TP DE CONVERSION\obj\Debug\TP DE CONVERSION.pdb
+C:\000Work\TP DE CONVERSION\obj\Debug\TP_DE_CONVERSION.Info.resources

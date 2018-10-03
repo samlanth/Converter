@@ -232,7 +232,9 @@
             this.Controls.Add(this.RB_Distance);
             this.Controls.Add(this.RB_POIDS);
             this.Controls.Add(this.RB_Volume);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Conversion";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Conversion";
             this.Load += new System.EventHandler(this.Conversion_Load);
             this.ResumeLayout(false);

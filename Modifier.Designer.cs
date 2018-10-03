@@ -64,6 +64,9 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 13;
+            this.textBox2.Text = "0.0";
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.textBox2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_KeyPress);
             // 
             // textBox1
             // 
@@ -71,6 +74,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 12;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // RB_POIDS
             // 
@@ -147,12 +151,15 @@
             this.flashButton1.Text = "flashButton1";
             this.flashButton1.UseVisualStyleBackColor = true;
             this.flashButton1.Click += new System.EventHandler(this.flashButton1_Click);
+            this.flashButton1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.flashButton1_MouseDown);
+            this.flashButton1.MouseLeave += new System.EventHandler(this.flashButton1_MouseLeave);
+            this.flashButton1.MouseHover += new System.EventHandler(this.flashButton1_MouseHover);
             // 
             // Modifier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(209, 193);
+            this.ClientSize = new System.Drawing.Size(237, 193);
             this.Controls.Add(this.flashButton2);
             this.Controls.Add(this.flashButton1);
             this.Controls.Add(this.label2);
@@ -162,8 +169,10 @@
             this.Controls.Add(this.RB_POIDS);
             this.Controls.Add(this.RB_DISTANCE);
             this.Controls.Add(this.RB_VOLUME);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Modifier";
-            this.Text = "Modifier";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.Text = "Modification d\'unité";
             this.Load += new System.EventHandler(this.Modifier_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
