@@ -43,7 +43,7 @@
             // RB_VOLUME
             // 
             this.RB_VOLUME.AutoSize = true;
-            this.RB_VOLUME.Location = new System.Drawing.Point(12, 12);
+            this.RB_VOLUME.Location = new System.Drawing.Point(2, 12);
             this.RB_VOLUME.Name = "RB_VOLUME";
             this.RB_VOLUME.Size = new System.Drawing.Size(60, 17);
             this.RB_VOLUME.TabIndex = 0;
@@ -55,7 +55,7 @@
             // RB_DISTANCE
             // 
             this.RB_DISTANCE.AutoSize = true;
-            this.RB_DISTANCE.Location = new System.Drawing.Point(88, 12);
+            this.RB_DISTANCE.Location = new System.Drawing.Point(2, 35);
             this.RB_DISTANCE.Name = "RB_DISTANCE";
             this.RB_DISTANCE.Size = new System.Drawing.Size(67, 17);
             this.RB_DISTANCE.TabIndex = 1;
@@ -67,7 +67,7 @@
             // RB_POIDS
             // 
             this.RB_POIDS.AutoSize = true;
-            this.RB_POIDS.Location = new System.Drawing.Point(183, 12);
+            this.RB_POIDS.Location = new System.Drawing.Point(2, 58);
             this.RB_POIDS.Name = "RB_POIDS";
             this.RB_POIDS.Size = new System.Drawing.Size(51, 17);
             this.RB_POIDS.TabIndex = 2;
@@ -78,7 +78,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(65, 62);
+            this.textBox1.Location = new System.Drawing.Point(92, 32);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 3;
@@ -88,7 +88,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(65, 101);
+            this.textBox2.Location = new System.Drawing.Point(92, 87);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 4;
@@ -100,7 +100,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 85);
+            this.label1.Location = new System.Drawing.Point(89, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 13);
             this.label1.TabIndex = 5;
@@ -109,7 +109,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(94, 46);
+            this.label2.Location = new System.Drawing.Point(89, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 6;
@@ -123,7 +123,7 @@
             this.flashButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton2.DisabledImage = null;
             this.flashButton2.Image = ((System.Drawing.Image)(resources.GetObject("flashButton2.Image")));
-            this.flashButton2.Location = new System.Drawing.Point(119, 127);
+            this.flashButton2.Location = new System.Drawing.Point(50, 87);
             this.flashButton2.Name = "flashButton2";
             this.flashButton2.NeutralImage = null;
             this.flashButton2.OverImage = null;
@@ -144,7 +144,7 @@
             this.flashButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton1.DisabledImage = null;
             this.flashButton1.Image = ((System.Drawing.Image)(resources.GetObject("flashButton1.Image")));
-            this.flashButton1.Location = new System.Drawing.Point(77, 127);
+            this.flashButton1.Location = new System.Drawing.Point(2, 87);
             this.flashButton1.Name = "flashButton1";
             this.flashButton1.NeutralImage = null;
             this.flashButton1.OverImage = null;
@@ -162,7 +162,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(241, 173);
+            this.ClientSize = new System.Drawing.Size(211, 132);
             this.Controls.Add(this.flashButton2);
             this.Controls.Add(this.flashButton1);
             this.Controls.Add(this.label2);

@@ -24,7 +24,7 @@ namespace TP_DE_CONVERSION
 
         private void btn_conversion_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(TB_Values.Text))
+            if (string.IsNullOrEmpty(TB_Values.Text) == true)
             {
                 Resultat_Conversion.Text = "";
             }
@@ -32,7 +32,8 @@ namespace TP_DE_CONVERSION
             {
                 Resultat_Conversion.Text = CONVERTER.Convert(decimal.Parse(TB_Values.Text), CONVERTER.GetUnitByName(comboBox1.Text), CONVERTER.GetUnitByName(comboBox2.Text));
             }
-            
+            btn_conversion.Enabled = false;
+            btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Disabled;
         }
 
         private void btn_quitter_Click(object sender, EventArgs e)
@@ -228,6 +229,7 @@ namespace TP_DE_CONVERSION
                     btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Disabled;
                     btn_effacer_val.Enabled = false;
                     btn_effacer_val.BackgroundImage = Properties.Resources.ICON_Effacer_Disable;
+
                 }
             }
             catch

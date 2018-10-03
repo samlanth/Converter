@@ -43,7 +43,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(82, 45);
+            this.label2.Location = new System.Drawing.Point(82, 12);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 15;
@@ -52,7 +52,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(49, 97);
+            this.label1.Location = new System.Drawing.Point(177, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 13);
             this.label1.TabIndex = 14;
@@ -60,9 +60,9 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(52, 113);
+            this.textBox2.Location = new System.Drawing.Point(198, 26);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(111, 20);
             this.textBox2.TabIndex = 13;
             this.textBox2.Text = "0.0";
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -70,9 +70,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(52, 61);
+            this.textBox1.Location = new System.Drawing.Point(85, 26);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(107, 20);
             this.textBox1.TabIndex = 12;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -80,7 +80,7 @@
             // 
             this.RB_POIDS.AutoCheck = false;
             this.RB_POIDS.AutoSize = true;
-            this.RB_POIDS.Location = new System.Drawing.Point(158, 12);
+            this.RB_POIDS.Location = new System.Drawing.Point(5, 79);
             this.RB_POIDS.Name = "RB_POIDS";
             this.RB_POIDS.Size = new System.Drawing.Size(51, 17);
             this.RB_POIDS.TabIndex = 11;
@@ -93,7 +93,7 @@
             // 
             this.RB_DISTANCE.AutoCheck = false;
             this.RB_DISTANCE.AutoSize = true;
-            this.RB_DISTANCE.Location = new System.Drawing.Point(85, 12);
+            this.RB_DISTANCE.Location = new System.Drawing.Point(5, 47);
             this.RB_DISTANCE.Name = "RB_DISTANCE";
             this.RB_DISTANCE.Size = new System.Drawing.Size(67, 17);
             this.RB_DISTANCE.TabIndex = 10;
@@ -106,7 +106,7 @@
             // 
             this.RB_VOLUME.AutoCheck = false;
             this.RB_VOLUME.AutoSize = true;
-            this.RB_VOLUME.Location = new System.Drawing.Point(12, 12);
+            this.RB_VOLUME.Location = new System.Drawing.Point(5, 12);
             this.RB_VOLUME.Name = "RB_VOLUME";
             this.RB_VOLUME.Size = new System.Drawing.Size(60, 17);
             this.RB_VOLUME.TabIndex = 9;
@@ -123,7 +123,7 @@
             this.flashButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton2.DisabledImage = null;
             this.flashButton2.Image = ((System.Drawing.Image)(resources.GetObject("flashButton2.Image")));
-            this.flashButton2.Location = new System.Drawing.Point(105, 139);
+            this.flashButton2.Location = new System.Drawing.Point(198, 60);
             this.flashButton2.Name = "flashButton2";
             this.flashButton2.NeutralImage = null;
             this.flashButton2.OverImage = null;
@@ -144,7 +144,7 @@
             this.flashButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton1.DisabledImage = null;
             this.flashButton1.Image = ((System.Drawing.Image)(resources.GetObject("flashButton1.Image")));
-            this.flashButton1.Location = new System.Drawing.Point(63, 139);
+            this.flashButton1.Location = new System.Drawing.Point(123, 60);
             this.flashButton1.Name = "flashButton1";
             this.flashButton1.NeutralImage = null;
             this.flashButton1.OverImage = null;
@@ -161,7 +161,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(237, 193);
+            this.ClientSize = new System.Drawing.Size(309, 111);
             this.Controls.Add(this.flashButton2);
             this.Controls.Add(this.flashButton1);
             this.Controls.Add(this.label2);

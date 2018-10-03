@@ -142,7 +142,7 @@ namespace TP_DE_CONVERSION
         {
             try
             {
-                if (string.IsNullOrEmpty(textBox1.Text) == false)
+                if (string.IsNullOrEmpty(textBox1.Text) == false && string.IsNullOrEmpty(textBox2.Text) == false)
                 {
                     flashButton1.Enabled = true;
                     flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Neutral;
@@ -161,8 +161,8 @@ namespace TP_DE_CONVERSION
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(textBox2.Text) == false)
-            {
+            if  (string.IsNullOrEmpty(textBox2.Text) == false && string.IsNullOrEmpty(textBox1.Text) == false)
+                {
 
                 flashButton1.Enabled = true;
                 flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Neutral;

@@ -43,7 +43,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(125, 78);
+            this.label2.Location = new System.Drawing.Point(140, 39);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 13);
@@ -53,7 +53,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(87, 117);
+            this.label1.Location = new System.Drawing.Point(73, 78);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(120, 13);
@@ -62,7 +62,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(73, 133);
+            this.textBox2.Location = new System.Drawing.Point(73, 94);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -71,7 +71,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(73, 94);
+            this.textBox1.Location = new System.Drawing.Point(140, 55);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -80,7 +80,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(73, 55);
+            this.textBox3.Location = new System.Drawing.Point(2, 55);
             this.textBox3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
@@ -90,7 +90,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(125, 39);
+            this.label3.Location = new System.Drawing.Point(-1, 39);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(31, 13);
@@ -115,7 +115,7 @@
             this.flashButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton2.DisabledImage = null;
             this.flashButton2.Image = ((System.Drawing.Image)(resources.GetObject("flashButton2.Image")));
-            this.flashButton2.Location = new System.Drawing.Point(157, 159);
+            this.flashButton2.Location = new System.Drawing.Point(157, 120);
             this.flashButton2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.flashButton2.Name = "flashButton2";
             this.flashButton2.NeutralImage = null;
@@ -137,7 +137,7 @@
             this.flashButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton1.DisabledImage = null;
             this.flashButton1.Image = ((System.Drawing.Image)(resources.GetObject("flashButton1.Image")));
-            this.flashButton1.Location = new System.Drawing.Point(90, 159);
+            this.flashButton1.Location = new System.Drawing.Point(89, 120);
             this.flashButton1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.flashButton1.Name = "flashButton1";
             this.flashButton1.NeutralImage = null;
@@ -155,7 +155,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(285, 196);
+            this.ClientSize = new System.Drawing.Size(277, 162);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox3);

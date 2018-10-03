@@ -166,7 +166,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(239, 216);
+            this.ClientSize = new System.Drawing.Size(248, 216);
             this.Controls.Add(this.flashButton5);
             this.Controls.Add(this.flashButton4);
             this.Controls.Add(this.flashButton3);
