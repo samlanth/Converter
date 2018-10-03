@@ -86,7 +86,7 @@ namespace UnitConverter
                 fromStreamUnit.Name = tokens[1];
                 fromStreamUnit.MetricValue = decimal.Parse(tokens[2].Replace('.', CONVERTER.DecimalSymbol));
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 // à faire: Afficher le message d'erreur ex.Message
             }

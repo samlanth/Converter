@@ -14,7 +14,6 @@ namespace TP_DE_CONVERSION
     {
         public string DisplayName { get; set; }
 
-        private ToolTip toolTip;
 
         public Conversion()
         {
