@@ -150,20 +150,25 @@ namespace TP_DE_CONVERSION
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
-            if (string.IsNullOrEmpty(textBox1.Text) == false)
+            try
             {
-                
-                flashButton1.Enabled = true;
-                flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Neutral;
+                if (string.IsNullOrEmpty(textBox1.Text) == false)
+                {
+
+                    flashButton1.Enabled = true;
+                    flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Neutral;
+                }
+                else
+                {
+
+                    flashButton1.Enabled = false;
+                    flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Disable;
+                }
             }
-            else
+            catch
             {
-                
-                flashButton1.Enabled = false;
-                flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Disable;
+                MessageBox.Show("erreur");
             }
-            
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

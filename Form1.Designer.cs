@@ -102,7 +102,7 @@
             // 
             // flashButton1
             // 
-            this.flashButton1.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.Button_Exit_Neutral;
+            this.flashButton1.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.return_button3;
             this.flashButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton1.ClickedImage = null;
             this.flashButton1.DisabledImage = null;

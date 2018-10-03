@@ -146,7 +146,7 @@ namespace TP_DE_CONVERSION
                 e.Handled = true;
             }
 
-            // only allow one decimal point
+            // Un '.' uniquement
             if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
             {
                 e.Handled = true;

@@ -74,7 +74,7 @@ namespace TP_DE_CONVERSION
 
         private void Gestion_Load(object sender, EventArgs e)
         {
-
+            
             foreach (Unit unit in CONVERTER.GetAllUnits())
             {
                 listBox1.Items.Add(unit);            
@@ -145,6 +145,7 @@ namespace TP_DE_CONVERSION
                 listBox1.Items.Add(unit);
             }
             listBox1.SelectedIndex = 0;
+            listBox1.Focus();
         }
 
         private void flashButton1_Click(object sender, EventArgs e)
@@ -157,6 +158,7 @@ namespace TP_DE_CONVERSION
                 listBox1.Items.Add(unit);
             }
             listBox1.SelectedIndex = 0;
+            listBox1.Focus();
         }
 
         private void flashButton2_Click(object sender, EventArgs e)
@@ -168,6 +170,7 @@ namespace TP_DE_CONVERSION
                 listBox1.Items.Add(unit);
             }
             listBox1.SelectedIndex = 0;
+            listBox1.Focus();
         }
 
         private void Gestion_Enter(object sender, EventArgs e)
@@ -203,6 +206,7 @@ namespace TP_DE_CONVERSION
         private void flashButton3_Click(object sender, EventArgs e)
         {
             this.Close();
+            listBox1.Focus();
         }
 
         private void flashButton1_KeyDown(object sender, KeyEventArgs e)
@@ -233,6 +237,7 @@ namespace TP_DE_CONVERSION
         private void flashButton5_Click(object sender, EventArgs e)
         {
             Info();
+            listBox1.Focus();
         }
 
         private void Gestion_KeyDown(object sender, KeyEventArgs e)
