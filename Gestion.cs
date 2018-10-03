@@ -58,7 +58,6 @@ namespace TP_DE_CONVERSION
 
             if (dlg.ShowDialog() == DialogResult.OK)
             {
-
             }
         }
 
@@ -66,15 +65,10 @@ namespace TP_DE_CONVERSION
         {
             
                 Unit unit = (Unit)listBox1.SelectedItem;
-         
-           // LBL_UnitName.Text = unit.Name;
-            //LBL_UnitType.Text = unit.Type.ToString();
-            //LBL_UnitMetricValue.Text = unit.MetricValue.ToString(); ;
         }
 
         private void Gestion_Load(object sender, EventArgs e)
         {
-            
             foreach (Unit unit in CONVERTER.GetAllUnits())
             {
                 listBox1.Items.Add(unit);            
@@ -121,19 +115,17 @@ namespace TP_DE_CONVERSION
 
         private void flashButton3_MouseDown(object sender, MouseEventArgs e)
         {
-            this.flashButton3.BackgroundImage = Properties.Resources.Button_Exit_Click;
-           
-            
+            this.flashButton3.BackgroundImage = Properties.Resources.return_button2;
         }
 
         private void flashButton3_MouseHover(object sender, EventArgs e)
         {
-            this.flashButton3.BackgroundImage = Properties.Resources.Button_Exit_Hover;
+            this.flashButton3.BackgroundImage = Properties.Resources.return_button4;
         }
 
         private void flashButton3_MouseLeave(object sender, EventArgs e)
         {
-            this.flashButton3.BackgroundImage = Properties.Resources.Button_Exit_Neutral;
+            this.flashButton3.BackgroundImage = Properties.Resources.return_button;
         }
 
         private void flashButton4_Click(object sender, EventArgs e)
@@ -179,18 +171,12 @@ namespace TP_DE_CONVERSION
             foreach (Unit unit in CONVERTER.GetAllUnits())
             {
                 listBox1.Items.Add(unit);
-           
             }
         }
 
         private void flashButton4_MouseDown(object sender, MouseEventArgs e)
         {
             this.flashButton4.BackgroundImage = Properties.Resources.ICON_Editer_Click;
-        }
-
-        private void flashButton4_MouseClick(object sender, MouseEventArgs e)
-        {
-            //this.flashButton4.BackgroundImage = Properties.Resources.ICON_Editer_Click;
         }
 
         private void flashButton4_MouseHover(object sender, EventArgs e)
@@ -207,16 +193,6 @@ namespace TP_DE_CONVERSION
         {
             this.Close();
             listBox1.Focus();
-        }
-
-        private void flashButton1_KeyDown(object sender, KeyEventArgs e)
-        {
-
-        }
-
-        private void Gestion_KeyPress(object sender, KeyPressEventArgs e)
-        {
-           
         }
 
         private void flashButton5_MouseHover(object sender, EventArgs e)
@@ -240,41 +216,27 @@ namespace TP_DE_CONVERSION
             listBox1.Focus();
         }
 
-        private void Gestion_KeyDown(object sender, KeyEventArgs e)
-        {
-            
-                
-        }
-
         private void listBox1_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F1)
 
             {
-
                 flashButton5.PerformClick();
-
             }
             if (e.KeyCode == Keys.Enter)
 
             {
-
                 flashButton4.PerformClick();
-
             }
             if (e.KeyCode == Keys.Add)
 
             {
-
                 flashButton1.PerformClick();
-
             }
             if (e.KeyCode == Keys.Back)
 
             {
-
                 flashButton2.PerformClick();
-
             }
         }
         //        ---------------------AJOUTER---------------------------------------

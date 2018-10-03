@@ -99,7 +99,6 @@
             this.Resultat_Conversion.ReadOnly = true;
             this.Resultat_Conversion.Size = new System.Drawing.Size(121, 20);
             this.Resultat_Conversion.TabIndex = 6;
-            this.Resultat_Conversion.TextChanged += new System.EventHandler(this.Resultat_Conversion_TextChanged);
             // 
             // comboBox1
             // 
@@ -109,7 +108,6 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 5;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             this.comboBox1.SelectedValueChanged += new System.EventHandler(this.comboBox1_SelectedValueChanged);
             // 
             // comboBox2
@@ -148,20 +146,20 @@
             this.label2.Size = new System.Drawing.Size(60, 13);
             this.label2.TabIndex = 14;
             this.label2.Text = "Conversion";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // flashButton1
             // 
-            this.flashButton1.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.Button_Exit_Neutral;
+            this.flashButton1.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.return_button;
             this.flashButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton1.ClickedImage = null;
+            this.flashButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton1.DisabledImage = null;
             this.flashButton1.Image = ((System.Drawing.Image)(resources.GetObject("flashButton1.Image")));
-            this.flashButton1.Location = new System.Drawing.Point(276, 151);
+            this.flashButton1.Location = new System.Drawing.Point(314, 151);
             this.flashButton1.Name = "flashButton1";
             this.flashButton1.NeutralImage = null;
             this.flashButton1.OverImage = null;
-            this.flashButton1.Size = new System.Drawing.Size(82, 31);
+            this.flashButton1.Size = new System.Drawing.Size(44, 31);
             this.flashButton1.TabIndex = 9;
             this.flashButton1.Click += new System.EventHandler(this.flashButton1_Click);
             this.flashButton1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.flashButton1_MouseDown);
@@ -173,6 +171,7 @@
             this.btn_effacer_val.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.ICON_Effacer_Neutral;
             this.btn_effacer_val.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_effacer_val.ClickedImage = null;
+            this.btn_effacer_val.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_effacer_val.DisabledImage = null;
             this.btn_effacer_val.Image = ((System.Drawing.Image)(resources.GetObject("btn_effacer_val.Image")));
             this.btn_effacer_val.Location = new System.Drawing.Point(322, 100);
@@ -191,6 +190,7 @@
             this.btn_conversion.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.convert_Icon_Neutral;
             this.btn_conversion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btn_conversion.ClickedImage = null;
+            this.btn_conversion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_conversion.DisabledImage = null;
             this.btn_conversion.Image = ((System.Drawing.Image)(resources.GetObject("btn_conversion.Image")));
             this.btn_conversion.Location = new System.Drawing.Point(153, 100);

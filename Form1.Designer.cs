@@ -57,7 +57,6 @@
             this.menuStrip1.Size = new System.Drawing.Size(407, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // quitterToolStripMenuItem
             // 
@@ -69,7 +68,6 @@
             this.quitterToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.G)));
             this.quitterToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.quitterToolStripMenuItem.Text = "Action";
-            this.quitterToolStripMenuItem.Click += new System.EventHandler(this.quitterToolStripMenuItem_Click);
             // 
             // gérerLesUnitésToolStripMenuItem
             // 
@@ -105,6 +103,7 @@
             this.flashButton1.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.return_button3;
             this.flashButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton1.ClickedImage = null;
+            this.flashButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton1.DisabledImage = null;
             this.flashButton1.Image = ((System.Drawing.Image)(resources.GetObject("flashButton1.Image")));
             this.flashButton1.Location = new System.Drawing.Point(273, 35);
@@ -124,6 +123,7 @@
             this.flashButton3.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.ICON_Editer_Neutre;
             this.flashButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton3.ClickedImage = null;
+            this.flashButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton3.DisabledImage = null;
             this.flashButton3.Image = ((System.Drawing.Image)(resources.GetObject("flashButton3.Image")));
             this.flashButton3.Location = new System.Drawing.Point(164, 43);
@@ -143,6 +143,7 @@
             this.BTN_CONVERSION.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.convert_Icon_Neutral;
             this.BTN_CONVERSION.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.BTN_CONVERSION.ClickedImage = null;
+            this.BTN_CONVERSION.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BTN_CONVERSION.DisabledImage = null;
             this.BTN_CONVERSION.Image = ((System.Drawing.Image)(resources.GetObject("BTN_CONVERSION.Image")));
             this.BTN_CONVERSION.Location = new System.Drawing.Point(42, 35);

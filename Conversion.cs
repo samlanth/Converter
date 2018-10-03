@@ -96,22 +96,7 @@ namespace TP_DE_CONVERSION
                 this.btn_conversion.BackgroundImage = Properties.Resources.convert_Icon_Clicked;
         }
         /* ---------------------------BTN_CONVERSION---------------------------- */
-        /* ---------------------------BTN_QUITTER---------------------------- */
-        private void btn_quitter_MouseHover(object sender, EventArgs e)
-        {
-          //  this.btn_quitter.BackgroundImage = Properties.Resources.ICON_Annuler_Over;
-        }
-
-        private void btn_quitter_MouseLeave(object sender, EventArgs e)
-        {
-          //  this.btn_quitter.BackgroundImage = Properties.Resources.ICON_Annuler_Neutral;
-        }
-
-        private void btn_quitter_MouseDown(object sender, MouseEventArgs e)
-        {
-           // this.btn_quitter.BackgroundImage = Properties.Resources.ICON_Annuler_Click;
-        }
-        /* ---------------------------BTN_QUITTER---------------------------- */
+        
         /* --------------------------- BTN_EFFACER---------------------------- */
         private void btn_effacer_val_MouseHover(object sender, EventArgs e)
         {
@@ -170,23 +155,18 @@ namespace TP_DE_CONVERSION
 
         private void flashButton1_MouseDown(object sender, MouseEventArgs e)
         {
-            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Click;
+            this.flashButton1.BackgroundImage = Properties.Resources.return_button2;
            
         }
 
         private void flashButton1_MouseHover(object sender, EventArgs e)
         {
-            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Hover;
+            this.flashButton1.BackgroundImage = Properties.Resources.return_button4;
         }
 
         private void flashButton1_MouseLeave(object sender, EventArgs e)
         {
-            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Neutral;
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            this.flashButton1.BackgroundImage = Properties.Resources.return_button;
         }
 
         private void RB_POIDS_CheckedChanged(object sender, EventArgs e)
@@ -220,16 +200,6 @@ namespace TP_DE_CONVERSION
                 comboBox1.SelectedIndex = 1;
                 comboBox2.SelectedIndex = 2;
             }
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Resultat_Conversion_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void TB_Values_TextChanged(object sender, EventArgs e)
@@ -270,7 +240,6 @@ namespace TP_DE_CONVERSION
         {
             if (string.IsNullOrEmpty(TB_Values.Text))
             {
-
             }
             else
             {
@@ -282,7 +251,6 @@ namespace TP_DE_CONVERSION
         {
             if (string.IsNullOrEmpty(TB_Values.Text))
             {
-
             }
             else
             {
@@ -294,7 +262,6 @@ namespace TP_DE_CONVERSION
         {
             if (string.IsNullOrEmpty(TB_Values.Text))
             {
-
             }
             else
             {
@@ -306,7 +273,6 @@ namespace TP_DE_CONVERSION
         {
             if (string.IsNullOrEmpty(TB_Values.Text))
             {
-
             }
             else
             {
@@ -318,7 +284,6 @@ namespace TP_DE_CONVERSION
         {
             if (string.IsNullOrEmpty(TB_Values.Text))
             {
-
             }
             else
             {

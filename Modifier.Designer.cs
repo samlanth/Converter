@@ -117,9 +117,10 @@
             // 
             // flashButton2
             // 
-            this.flashButton2.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.Button_Exit_Neutral;
+            this.flashButton2.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.return_button;
             this.flashButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton2.ClickedImage = null;
+            this.flashButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton2.DisabledImage = null;
             this.flashButton2.Image = ((System.Drawing.Image)(resources.GetObject("flashButton2.Image")));
             this.flashButton2.Location = new System.Drawing.Point(105, 139);
@@ -140,6 +141,7 @@
             this.flashButton1.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.ICON_Accepter_Neutral;
             this.flashButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton1.ClickedImage = null;
+            this.flashButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton1.DisabledImage = null;
             this.flashButton1.Image = ((System.Drawing.Image)(resources.GetObject("flashButton1.Image")));
             this.flashButton1.Location = new System.Drawing.Point(63, 139);

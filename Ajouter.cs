@@ -18,10 +18,6 @@ namespace TP_DE_CONVERSION
             InitializeComponent();
             this.StartPosition = FormStartPosition.CenterScreen;
         }
-        
-
-
-
         private void Ajouter_Unité()
         {
             Ajouter dlg = new Ajouter();
@@ -32,12 +28,6 @@ namespace TP_DE_CONVERSION
                 DisplayName = dlg.DisplayName;
             }
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void flashButton1_MouseClick(object sender, MouseEventArgs e)
         {
             this.flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Click;
@@ -51,17 +41,17 @@ namespace TP_DE_CONVERSION
 
         private void flashButton2_MouseDown(object sender, MouseEventArgs e)
         {
-            this.flashButton2.BackgroundImage = Properties.Resources.Button_Exit_Click;
+            this.flashButton2.BackgroundImage = Properties.Resources.return_button2;
         }
 
         private void flashButton2_MouseHover(object sender, EventArgs e)
         {
-            this.flashButton2.BackgroundImage = Properties.Resources.Button_Exit_Hover;
+            this.flashButton2.BackgroundImage = Properties.Resources.return_button4;
         }
 
         private void flashButton2_MouseLeave(object sender, EventArgs e)
         {
-            this.flashButton2.BackgroundImage = Properties.Resources.Button_Exit_Neutral;
+            this.flashButton2.BackgroundImage = Properties.Resources.return_button;
         }
 
         private void flashButton1_Click(object sender, EventArgs e)
@@ -154,13 +144,11 @@ namespace TP_DE_CONVERSION
             {
                 if (string.IsNullOrEmpty(textBox1.Text) == false)
                 {
-
                     flashButton1.Enabled = true;
                     flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Neutral;
                 }
                 else
                 {
-
                     flashButton1.Enabled = false;
                     flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Disable;
                 }
@@ -181,7 +169,6 @@ namespace TP_DE_CONVERSION
             }
             else
             {
-
                 flashButton1.Enabled = false;
                 flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Disable;
             }
@@ -193,13 +180,11 @@ namespace TP_DE_CONVERSION
             e.Handled = !(char.IsLetter(e.KeyChar) || e.KeyChar == (char)Keys.Back || e.KeyChar == (char)Keys.Space);
             if (string.IsNullOrEmpty(textBox1.Text) == false)
             {
-               
                 flashButton1.Enabled = true;
                 flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Neutral;
             }
             else
             {
-
                 flashButton1.Enabled = false;
                 flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Disable;
             }

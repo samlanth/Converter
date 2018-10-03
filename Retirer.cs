@@ -37,17 +37,6 @@ namespace TP_DE_CONVERSION
             toolTip1.SetToolTip(this.flashButton2, "Annuler et revenir a la gestion");
 
         }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void flashButton2_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -55,17 +44,17 @@ namespace TP_DE_CONVERSION
 
         private void flashButton2_MouseDown(object sender, MouseEventArgs e)
         {
-            this.flashButton2.BackgroundImage = Properties.Resources.Button_Exit_Click;
+            this.flashButton2.BackgroundImage = Properties.Resources.return_button2;
         }
 
         private void flashButton2_MouseHover(object sender, EventArgs e)
         {
-            this.flashButton2.BackgroundImage = Properties.Resources.Button_Exit_Hover;
+            this.flashButton2.BackgroundImage = Properties.Resources.return_button4;
         }
 
         private void flashButton2_MouseLeave(object sender, EventArgs e)
         {
-            this.flashButton2.BackgroundImage = Properties.Resources.Button_Exit_Neutral;
+            this.flashButton2.BackgroundImage = Properties.Resources.return_button;
         }
 
         private void flashButton1_MouseDown(object sender, MouseEventArgs e)

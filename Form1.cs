@@ -30,10 +30,7 @@ namespace TP_DE_CONVERSION
             }
         }
 
-        private void effectuerUneConversionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            
-        }
+
 
         private void gererToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -43,11 +40,6 @@ namespace TP_DE_CONVERSION
         private void quitterToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void flashButton2_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void BTN_CONVERSION_Click(object sender, EventArgs e)
@@ -82,23 +74,6 @@ namespace TP_DE_CONVERSION
         }
         /* ---------------------------BTN_CONVERSION---------------------------- */
 
-        /* ---------------------------BTN_QUITTER---------------------------- */
-        private void BTN_QUITTER_MouseHover(object sender, EventArgs e)
-        {
-           // this.BTN_QUITTER.BackgroundImage = Properties.Resources.ICON_Annuler_Over;
-        }
-
-        private void BTN_QUITTER_MouseLeave(object sender, EventArgs e)
-        {
-            //this.BTN_QUITTER.BackgroundImage = Properties.Resources.ICON_Annuler_Neutral;
-        }
-
-        private void BTN_QUITTER_MouseDown(object sender, MouseEventArgs e)
-        {
-           // this.BTN_QUITTER.BackgroundImage = Properties.Resources.ICON_Annuler_Click;
-        }
-        /* ---------------------------BTN_QUITTER---------------------------- */
-
         /* ---------------------------BTN_GERER---------------------------- */
         private void flashButton3_MouseHover(object sender, EventArgs e)
         {
@@ -131,17 +106,17 @@ namespace TP_DE_CONVERSION
 
         private void flashButton1_MouseHover(object sender, EventArgs e)
         {
-            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Hover;
+            this.flashButton1.BackgroundImage = Properties.Resources.return_button4;
         }
 
         private void flashButton1_MouseDown(object sender, MouseEventArgs e)
         {
-            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Click;
+            this.flashButton1.BackgroundImage = Properties.Resources.return_button2;
         }
 
         private void flashButton1_MouseLeave(object sender, EventArgs e)
         {
-            this.flashButton1.BackgroundImage = Properties.Resources.Button_Exit_Neutral;
+            this.flashButton1.BackgroundImage = Properties.Resources.return_button;
         }
         private void Effectuer_Gestion()
         {
@@ -157,49 +132,12 @@ namespace TP_DE_CONVERSION
         private void flashButton3_Click(object sender, EventArgs e)
         {
             Effectuer_Gestion();
-            //Gestion dlg = new Gestion();
-            //dlg.DisplayName = DisplayName;
-
-            //if (dlg.ShowDialog() == DialogResult.OK)
-            //{
-            //    DisplayName = dlg.DisplayName;
-            //}
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
-
-        private void quitterToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flashButton2_Click_1(object sender, EventArgs e)
-        {
-
         }
 
         private void effectuerUneConversionToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             Effectuer_Gestion();
         }
-
-        //private void InitializeComponent()
-        //{
-        //    this.SuspendLayout();
-
-        //    Form1
-
-
-        //    this.ClientSize = new System.Drawing.Size(507, 261);
-        //    this.Name = "Form1";
-        //    this.ResumeLayout(false);
-
-        //}
         /* ---------------------------BTN_GERER---------------------------- */
-
     }
-
 }

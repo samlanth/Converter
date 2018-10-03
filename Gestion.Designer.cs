@@ -62,13 +62,14 @@
             this.flashButton5.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.QuestionMark;
             this.flashButton5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton5.ClickedImage = null;
+            this.flashButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton5.DisabledImage = null;
             this.flashButton5.Image = ((System.Drawing.Image)(resources.GetObject("flashButton5.Image")));
             this.flashButton5.Location = new System.Drawing.Point(172, 9);
             this.flashButton5.Name = "flashButton5";
             this.flashButton5.NeutralImage = null;
             this.flashButton5.OverImage = null;
-            this.flashButton5.Size = new System.Drawing.Size(36, 36);
+            this.flashButton5.Size = new System.Drawing.Size(49, 36);
             this.flashButton5.TabIndex = 6;
             this.flashButton5.Text = "flashButton5";
             this.flashButton5.UseVisualStyleBackColor = true;
@@ -82,27 +83,28 @@
             this.flashButton4.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.ICON_Editer_Neutre;
             this.flashButton4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton4.ClickedImage = null;
+            this.flashButton4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton4.DisabledImage = null;
             this.flashButton4.Image = ((System.Drawing.Image)(resources.GetObject("flashButton4.Image")));
             this.flashButton4.Location = new System.Drawing.Point(172, 93);
             this.flashButton4.Name = "flashButton4";
             this.flashButton4.NeutralImage = null;
             this.flashButton4.OverImage = null;
-            this.flashButton4.Size = new System.Drawing.Size(36, 36);
+            this.flashButton4.Size = new System.Drawing.Size(49, 36);
             this.flashButton4.TabIndex = 5;
             this.flashButton4.Text = "flashButton4";
             this.flashButton4.UseVisualStyleBackColor = true;
             this.flashButton4.Click += new System.EventHandler(this.flashButton4_Click);
-            this.flashButton4.MouseClick += new System.Windows.Forms.MouseEventHandler(this.flashButton4_MouseClick);
             this.flashButton4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.flashButton4_MouseDown);
             this.flashButton4.MouseLeave += new System.EventHandler(this.flashButton4_MouseLeave);
             this.flashButton4.MouseHover += new System.EventHandler(this.flashButton4_MouseHover);
             // 
             // flashButton3
             // 
-            this.flashButton3.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.Button_Exit_Neutral;
+            this.flashButton3.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.return_button;
             this.flashButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton3.ClickedImage = null;
+            this.flashButton3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton3.DisabledImage = null;
             this.flashButton3.Image = ((System.Drawing.Image)(resources.GetObject("flashButton3.Image")));
             this.flashButton3.Location = new System.Drawing.Point(172, 177);
@@ -123,13 +125,14 @@
             this.flashButton2.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.ICON_Effacer_Neutral;
             this.flashButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton2.ClickedImage = null;
+            this.flashButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton2.DisabledImage = null;
             this.flashButton2.Image = ((System.Drawing.Image)(resources.GetObject("flashButton2.Image")));
             this.flashButton2.Location = new System.Drawing.Point(172, 135);
             this.flashButton2.Name = "flashButton2";
             this.flashButton2.NeutralImage = null;
             this.flashButton2.OverImage = null;
-            this.flashButton2.Size = new System.Drawing.Size(36, 36);
+            this.flashButton2.Size = new System.Drawing.Size(49, 36);
             this.flashButton2.TabIndex = 3;
             this.flashButton2.Text = "flashButton2";
             this.flashButton2.UseVisualStyleBackColor = true;
@@ -143,18 +146,18 @@
             this.flashButton1.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.ICON_Ajouter_Neutral;
             this.flashButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton1.ClickedImage = null;
+            this.flashButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton1.DisabledImage = null;
             this.flashButton1.Image = ((System.Drawing.Image)(resources.GetObject("flashButton1.Image")));
             this.flashButton1.Location = new System.Drawing.Point(172, 51);
             this.flashButton1.Name = "flashButton1";
             this.flashButton1.NeutralImage = null;
             this.flashButton1.OverImage = null;
-            this.flashButton1.Size = new System.Drawing.Size(36, 36);
+            this.flashButton1.Size = new System.Drawing.Size(49, 36);
             this.flashButton1.TabIndex = 2;
             this.flashButton1.Text = "flashButton1";
             this.flashButton1.UseVisualStyleBackColor = true;
             this.flashButton1.Click += new System.EventHandler(this.flashButton1_Click);
-            this.flashButton1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.flashButton1_KeyDown);
             this.flashButton1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.flashButton1_MouseDown);
             this.flashButton1.MouseLeave += new System.EventHandler(this.flashButton1_MouseLeave);
             this.flashButton1.MouseHover += new System.EventHandler(this.flashButton1_MouseHover);
@@ -177,8 +180,6 @@
             this.Text = "Gestion des Unités";
             this.Load += new System.EventHandler(this.Gestion_Load);
             this.Enter += new System.EventHandler(this.Gestion_Enter);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Gestion_KeyDown);
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Gestion_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 

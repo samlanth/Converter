@@ -27,17 +27,17 @@ namespace TP_DE_CONVERSION
 
         private void flashButton2_MouseDown(object sender, MouseEventArgs e)
         {
-            this.flashButton2.BackgroundImage = Properties.Resources.Button_Exit_Click;
+            this.flashButton2.BackgroundImage = Properties.Resources.return_button2;
         }
 
         private void flashButton2_MouseHover(object sender, EventArgs e)
         {
-            this.flashButton2.BackgroundImage = Properties.Resources.Button_Exit_Hover;
+            this.flashButton2.BackgroundImage = Properties.Resources.return_button4;
         }
 
         private void flashButton2_MouseLeave(object sender, EventArgs e)
         {
-            this.flashButton2.BackgroundImage = Properties.Resources.Button_Exit_Neutral;
+            this.flashButton2.BackgroundImage = Properties.Resources.return_button;
         }
 
         private void Modifier_Load(object sender, EventArgs e)
@@ -105,13 +105,11 @@ namespace TP_DE_CONVERSION
             
             if (string.IsNullOrEmpty(textBox2.Text) == false)
             {
-
                 flashButton1.Enabled = true;
                 flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Neutral;
             }
             else
             {
-
                 flashButton1.Enabled = false;
                 flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Disable;
             }
@@ -136,13 +134,11 @@ namespace TP_DE_CONVERSION
         {
             if (string.IsNullOrEmpty(textBox1.Text) == false)
             {
-
                 flashButton1.Enabled = true;
                 flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Neutral;
             }
             else
             {
-
                 flashButton1.Enabled = false;
                 flashButton1.BackgroundImage = Properties.Resources.ICON_Accepter_Disable;
             }

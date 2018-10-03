@@ -68,7 +68,6 @@
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(134, 20);
             this.textBox2.TabIndex = 13;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // textBox1
             // 
@@ -87,7 +86,6 @@
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(134, 20);
             this.textBox3.TabIndex = 18;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label3
             // 
@@ -111,12 +109,13 @@
             // 
             // flashButton2
             // 
-            this.flashButton2.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.Button_Exit_Neutral;
+            this.flashButton2.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.return_button;
             this.flashButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton2.ClickedImage = null;
+            this.flashButton2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton2.DisabledImage = null;
             this.flashButton2.Image = ((System.Drawing.Image)(resources.GetObject("flashButton2.Image")));
-            this.flashButton2.Location = new System.Drawing.Point(171, 159);
+            this.flashButton2.Location = new System.Drawing.Point(157, 159);
             this.flashButton2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.flashButton2.Name = "flashButton2";
             this.flashButton2.NeutralImage = null;
@@ -135,9 +134,10 @@
             this.flashButton1.BackgroundImage = global::TP_DE_CONVERSION.Properties.Resources.ICON_Accepter_Neutral;
             this.flashButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.flashButton1.ClickedImage = null;
+            this.flashButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.flashButton1.DisabledImage = null;
             this.flashButton1.Image = ((System.Drawing.Image)(resources.GetObject("flashButton1.Image")));
-            this.flashButton1.Location = new System.Drawing.Point(73, 159);
+            this.flashButton1.Location = new System.Drawing.Point(90, 159);
             this.flashButton1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.flashButton1.Name = "flashButton1";
             this.flashButton1.NeutralImage = null;
